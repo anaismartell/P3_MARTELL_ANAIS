@@ -1,0 +1,73 @@
+/*Blocs menus*/
+
+@mixin bloc-menu-accueil{
+    height: 350px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0px 0px 8px 1px #a2a5a4;
+    border-radius: 5px; 
+    a{
+        text-decoration: none;
+    }
+}
+
+@mixin bloc-menu-page{
+    width: 70%;
+    height: auto;
+    margin:auto;
+    margin-bottom: 5%;
+    box-shadow: 0px 0px 8px 1px #a2a5a4;
+    border-radius: 5px; 
+    font-family: 'Caveat';
+    font-size: 1.2em;
+}
+
+/*Titres et sous-titres*/
+
+@mixin name-page {
+    position: relative;
+    margin-top: -5%;
+    font-family:sans-serif;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+@mixin chic-title {
+    background: -webkit-linear-gradient(right, $chic-starter, $chic-main, $chic-dessert);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Croissant One', cursive;
+}
+
+@mixin chic-subtitle {
+    font-family:'Source Serif Pro', serif;
+    color: $chic-starter;
+    font-size: 1.7em;   
+}
+
+@mixin palette-title {
+    background: -webkit-linear-gradient(right, $palette-light, $palette-dark);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family:'Kaushan Script', cursive;
+}
+
+@mixin delice-title {
+    background: -webkit-linear-gradient(right, $delice-dessert,$delice-main,$delice-starter);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family:'Dancing Script', cursive;  
+}
+
+@mixin note-title {
+    color: $text-note; 
+    font-family:'Devonshire', cursive;
+    font-weight: lighter;
+}
+
+@mixin menu-subtitle {
+    font-family:'Caveat';
+    font-size: 2.5em;
+    font-weight: lighter;
+}
+

@@ -1,0 +1,12 @@
+.main__pages {
+    display: flex;
+    flex-direction: column;
+        .link__resto{
+        @include name-page;
+        }
+            .chic{
+            @include bloc-menu-page;
+            background-color: $menu-chic;
+            }  
+     }
+

@@ -1,0 +1,83 @@
+body{
+    margin: 0;
+}
+
+main{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5%;
+
+    .menu__1{
+    @include bloc-menu-accueil;
+    background-color: $menu-note;
+        h2{
+        @include note-title;
+        font-size: 2em;
+        margin-top: 0;
+        line-height: 0.8em;
+    }
+            h3{
+            @include menu-subtitle;
+            color: $text-note;
+            line-height: 0em;
+            }
+                .note__musictop{
+                position: relative;
+                margin-top: 40%;
+                height: 50px;
+                width: 50px;   
+            }
+        } 
+
+    .menu__2{
+    @include bloc-menu-accueil;
+    background-color: $menu-chic;
+        h2{
+        @include chic-title;
+        font-size: 1.2em;
+        padding-top: 50%;
+        }
+            h3{
+            @include chic-subtitle;
+            line-height: 1em;
+            }
+        }
+    
+    .menu__3{
+    @include bloc-menu-accueil;
+    background-color: $menu-delice;
+        h2{
+        @include delice-title;
+        font-size: 1.6em;
+        padding-top: 50%;
+        }
+            h3{
+            @include menu-subtitle;
+            color: $delice-main;
+            line-height: 0em;
+            }
+        }
+
+    .menu__4{
+    @include bloc-menu-accueil;
+    background-color: $menu-palette;
+        h2{
+        @include palette-title;
+        font-size: 1.6em;
+        padding-top: 50%;
+        }
+            h3{
+            @include menu-subtitle;
+            color: $palette-dark;
+            line-height: 0em;
+            }
+        } 
+    }
+
+button{
+    border: none;
+    display: block;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    }   

@@ -1,0 +1,16 @@
+button{
+    height: 50px;
+    width: 300px;
+    background-color:$header;
+    border-radius: 10px;
+    span{
+        font-size: 2em;
+        font-family: 'Montserrat';
+        color:$titlefixed;
+    }
+    .prochainement__point{
+        height: 7px;
+        width: 7px;
+        padding-right: 1%;
+    }
+}

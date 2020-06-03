@@ -1,0 +1,310 @@
+/*Blocs menus*/
+/*Titres et sous-titres*/
+button {
+  height: 50px;
+  width: 300px;
+  background-color: #589c87;
+  border-radius: 10px;
+}
+button span {
+  font-size: 2em;
+  font-family: "Montserrat";
+  color: #fac948;
+}
+button .prochainement__point {
+  height: 7px;
+  width: 7px;
+  padding-right: 1%;
+}
+
+header {
+  background-color: #589c87;
+  height: 100px;
+  text-align: center;
+}
+header h1 {
+  margin: 0;
+  padding-top: 1%;
+}
+header .header__text {
+  font-family: "Montserrat";
+  font-weight: bold;
+  font-size: 1.8em;
+  color: #fac948;
+  text-decoration: none;
+}
+
+footer {
+  background-color: #589c87;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+footer .footer__text {
+  color: #fac948;
+  font-size: 1.2em;
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-top: 3%;
+}
+
+.main__pages {
+  display: flex;
+  flex-direction: column;
+}
+.main__pages .link__resto {
+  position: relative;
+  margin-top: -5%;
+  font-family: sans-serif;
+  text-align: center;
+  font-size: 1.5em;
+}
+.main__pages .chic {
+  width: 70%;
+  height: auto;
+  margin: auto;
+  margin-bottom: 5%;
+  box-shadow: 0px 0px 8px 1px #a2a5a4;
+  border-radius: 5px;
+  font-family: "Caveat";
+  font-size: 1.2em;
+  background-color: #fff5fe;
+}
+
+.main__pages {
+  display: flex;
+  flex-direction: column;
+}
+.main__pages .link__resto {
+  position: relative;
+  margin-top: -5%;
+  font-family: sans-serif;
+  text-align: center;
+  font-size: 1.5em;
+}
+.main__pages .delice {
+  width: 70%;
+  height: auto;
+  margin: auto;
+  margin-bottom: 5%;
+  box-shadow: 0px 0px 8px 1px #a2a5a4;
+  border-radius: 5px;
+  font-family: "Caveat";
+  font-size: 1.2em;
+  background-color: #edefef;
+}
+
+.main__pages {
+  display: flex;
+  flex-direction: column;
+}
+.main__pages .link__resto {
+  position: relative;
+  margin-top: -5%;
+  font-family: sans-serif;
+  text-align: center;
+  font-size: 1.5em;
+}
+.main__pages .note {
+  width: 70%;
+  height: auto;
+  margin: auto;
+  margin-bottom: 5%;
+  box-shadow: 0px 0px 8px 1px #a2a5a4;
+  border-radius: 5px;
+  font-family: "Caveat";
+  font-size: 1.2em;
+  background-color: #fcdfda;
+  padding-right: 5%;
+  padding-left: 5%;
+}
+.main__pages .note .note__musictop {
+  height: 100px;
+  width: 100px;
+  display: block;
+  margin: auto;
+  margin-top: 5%;
+}
+.main__pages .note .note__title {
+  color: #412023;
+  font-family: "Devonshire", cursive;
+  font-weight: lighter;
+  font-size: 3em;
+  text-align: center;
+  line-height: 0;
+}
+.main__pages .note .note__undertitle {
+  display: flex;
+  justify-content: space-between;
+}
+.main__pages .note .note__undertitle .note_bar_left, .main__pages .note .note__undertitle .note_bar_right {
+  width: 40%;
+  height: 1%;
+}
+.main__pages .note .note__undertitle h3 {
+  font-size: 1.5em;
+  line-height: 0.2em;
+}
+.main__pages .note .name, .main__pages .note .price {
+  list-style-type: none;
+  padding-bottom: 2%;
+  font-size: 1.2em;
+}
+.main__pages .note .price {
+  position: absolute;
+  margin-left: 60%;
+  margin-top: -3%;
+}
+.main__pages {
+  display: flex;
+  flex-direction: column;
+}
+.main__pages .link__resto {
+  position: relative;
+  margin-top: -5%;
+  font-family: sans-serif;
+  text-align: center;
+  font-size: 1.5em;
+}
+.main__pages .palette {
+  width: 70%;
+  height: auto;
+  margin: auto;
+  margin-bottom: 5%;
+  box-shadow: 0px 0px 8px 1px #a2a5a4;
+  border-radius: 5px;
+  font-family: "Caveat";
+  font-size: 1.2em;
+  background-color: #fdfffd;
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 5%;
+}
+main .menu__1 {
+  height: 350px;
+  width: 250px;
+  text-align: center;
+  box-shadow: 0px 0px 8px 1px #a2a5a4;
+  border-radius: 5px;
+  background-color: #fcdfda;
+}
+main .menu__1 a {
+  text-decoration: none;
+}
+main .menu__1 h2 {
+  color: #412023;
+  font-family: "Devonshire", cursive;
+  font-weight: lighter;
+  font-size: 2em;
+  margin-top: 0;
+  line-height: 0.8em;
+}
+main .menu__1 h3 {
+  font-family: "Caveat";
+  font-size: 2.5em;
+  font-weight: lighter;
+  color: #412023;
+  line-height: 0em;
+}
+main .menu__1 .note__musictop {
+  position: relative;
+  margin-top: 40%;
+  height: 50px;
+  width: 50px;
+}
+main .menu__2 {
+  height: 350px;
+  width: 250px;
+  text-align: center;
+  box-shadow: 0px 0px 8px 1px #a2a5a4;
+  border-radius: 5px;
+  background-color: #fff5fe;
+}
+main .menu__2 a {
+  text-decoration: none;
+}
+main .menu__2 h2 {
+  background: -webkit-linear-gradient(right, #c67412, #a26196, #7252cd);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Croissant One", cursive;
+  font-size: 1.2em;
+  padding-top: 50%;
+}
+main .menu__2 h3 {
+  font-family: "Source Serif Pro", serif;
+  color: #c67412;
+  font-size: 1.7em;
+  line-height: 1em;
+}
+main .menu__3 {
+  height: 350px;
+  width: 250px;
+  text-align: center;
+  box-shadow: 0px 0px 8px 1px #a2a5a4;
+  border-radius: 5px;
+  background-color: #edefef;
+}
+main .menu__3 a {
+  text-decoration: none;
+}
+main .menu__3 h2 {
+  background: -webkit-linear-gradient(right, #269cf9, #1a72f3, #2840df);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Dancing Script", cursive;
+  font-size: 1.6em;
+  padding-top: 50%;
+}
+main .menu__3 h3 {
+  font-family: "Caveat";
+  font-size: 2.5em;
+  font-weight: lighter;
+  color: #1a72f3;
+  line-height: 0em;
+}
+main .menu__4 {
+  height: 350px;
+  width: 250px;
+  text-align: center;
+  box-shadow: 0px 0px 8px 1px #a2a5a4;
+  border-radius: 5px;
+  background-color: #fdfffd;
+}
+main .menu__4 a {
+  text-decoration: none;
+}
+main .menu__4 h2 {
+  background: -webkit-linear-gradient(right, #b6fa79, #41963c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Kaushan Script", cursive;
+  font-size: 1.6em;
+  padding-top: 50%;
+}
+main .menu__4 h3 {
+  font-family: "Caveat";
+  font-size: 2.5em;
+  font-weight: lighter;
+  color: #41963c;
+  line-height: 0em;
+}
+
+button {
+  border: none;
+  display: block;
+  margin: auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+/*# sourceMappingURL=style.css.map */
