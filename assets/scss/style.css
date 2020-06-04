@@ -36,9 +36,12 @@ header .header__text {
 
 footer {
   background-color: #589c87;
-  height: 100px;
+  height: 50px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
+  position: fixed;
+  bottom: 0;
 }
 footer .footer__text {
   color: #fac948;
@@ -47,7 +50,7 @@ footer .footer__text {
   text-decoration: none;
   margin-left: 5%;
   margin-right: 5%;
-  padding-top: 3%;
+  padding-top: 1%;
 }
 
 .main__pages {
@@ -65,12 +68,54 @@ footer .footer__text {
   width: 70%;
   height: auto;
   margin: auto;
-  margin-bottom: 5%;
+  margin-bottom: 10%;
   box-shadow: 0px 0px 8px 1px #a2a5a4;
   border-radius: 5px;
-  font-family: "Caveat";
-  font-size: 1.2em;
+  font-family: "Source Serif";
   background-color: #fff5fe;
+  padding: 5%;
+}
+.main__pages .chic .chic__title {
+  background: -webkit-linear-gradient(right, #7252cd, #c67412);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Croissant One", cursive;
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 10%;
+}
+.main__pages .chic .chic__undertitle {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5%;
+}
+.main__pages .chic .chic__undertitle .chic_bar_left, .main__pages .chic .chic__undertitle .chic_bar_right {
+  width: 30%;
+  height: 1%;
+}
+.main__pages .chic .chic__undertitle h3 {
+  font-size: 1.5em;
+  line-height: 0.2em;
+  margin-bottom: 5%;
+}
+.main__pages .chic .name, .main__pages .chic .price {
+  list-style-type: none;
+  padding-bottom: 2%;
+  font-size: 1.2em;
+}
+.main__pages .chic .price {
+  position: absolute;
+  margin-left: 60%;
+  margin-top: -3%;
+}
+.main__pages .chic #en__appetit {
+  color: #c67412;
+}
+.main__pages .chic #plaisir__papilles {
+  color: #a26196;
+}
+.main__pages .chic #gourmandises__sucrees {
+  color: #7252cd;
 }
 
 .main__pages {
@@ -88,12 +133,46 @@ footer .footer__text {
   width: 70%;
   height: auto;
   margin: auto;
-  margin-bottom: 5%;
+  margin-bottom: 10%;
   box-shadow: 0px 0px 8px 1px #a2a5a4;
   border-radius: 5px;
   font-family: "Caveat";
   font-size: 1.2em;
   background-color: #edefef;
+  padding: 5%;
+}
+.main__pages .delice .delice__title {
+  background: -webkit-linear-gradient(right, #269cf9, #1a72f3, #2840df);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Dancing Script", cursive;
+  font-size: 3em;
+  text-align: center;
+  margin-bottom: 10%;
+}
+.main__pages .delice .delice__undertitle {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5%;
+}
+.main__pages .delice .delice__undertitle .delice_bar_left, .main__pages .delice .delice__undertitle .delice_bar_right {
+  width: 30%;
+  height: 1%;
+}
+.main__pages .delice .delice__undertitle h3 {
+  font-size: 1.5em;
+  line-height: 0.2em;
+  margin-bottom: 5%;
+}
+.main__pages .delice .name, .main__pages .delice .price {
+  list-style-type: none;
+  padding-bottom: 2%;
+  font-size: 1.2em;
+}
+.main__pages .delice .price {
+  position: absolute;
+  margin-left: 60%;
+  margin-top: -3%;
 }
 
 .main__pages {
@@ -111,7 +190,7 @@ footer .footer__text {
   width: 70%;
   height: auto;
   margin: auto;
-  margin-bottom: 5%;
+  margin-bottom: 10%;
   box-shadow: 0px 0px 8px 1px #a2a5a4;
   border-radius: 5px;
   font-family: "Caveat";
@@ -157,6 +236,23 @@ footer .footer__text {
   margin-left: 60%;
   margin-top: -3%;
 }
+.main__pages .note .note__bottom {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin: 5%;
+}
+.main__pages .note .note__bottom .note_music_bottom {
+  height: 50px;
+  width: 50px;
+}
+.main__pages .note .note__bottom span {
+  color: #412023;
+  font-family: "Devonshire", cursive;
+  font-weight: lighter;
+  font-size: 2em;
+}
+
 .main__pages {
   display: flex;
   flex-direction: column;
@@ -172,12 +268,56 @@ footer .footer__text {
   width: 70%;
   height: auto;
   margin: auto;
-  margin-bottom: 5%;
+  margin-bottom: 10%;
   box-shadow: 0px 0px 8px 1px #a2a5a4;
   border-radius: 5px;
+  background-color: #fdfffd;
   font-family: "Caveat";
   font-size: 1.2em;
-  background-color: #fdfffd;
+  padding: 3%;
+}
+.main__pages .palette .palette__title {
+  background: -webkit-linear-gradient(right, #b6fa79, #41963c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Kaushan Script";
+  font-size: 3em;
+  text-align: center;
+  margin-bottom: 10%;
+}
+.main__pages .palette .palette__undertitle {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5%;
+}
+.main__pages .palette .palette__undertitle .palette_left, .main__pages .palette .palette__undertitle .palette_right {
+  width: 30%;
+  height: 1%;
+}
+.main__pages .palette .palette__undertitle h3 {
+  font-size: 1.5em;
+  line-height: 0.2em;
+  margin-bottom: 5%;
+}
+.main__pages .palette .name, .main__pages .palette .price {
+  list-style-type: none;
+  padding-bottom: 2%;
+  font-size: 1.2em;
+}
+.main__pages .palette .price {
+  position: absolute;
+  margin-left: 60%;
+  margin-top: -3%;
+}
+
+#mentions__legales {
+  margin: 5%;
+  text-align: justify;
+}
+#mentions__legales h2 {
+  text-align: center;
+  font-size: 3em;
+  margin: 5%;
 }
 
 body {
@@ -233,7 +373,7 @@ main .menu__2 a {
   text-decoration: none;
 }
 main .menu__2 h2 {
-  background: -webkit-linear-gradient(right, #c67412, #a26196, #7252cd);
+  background: -webkit-linear-gradient(right, #7252cd, #c67412);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-family: "Croissant One", cursive;
@@ -287,7 +427,7 @@ main .menu__4 h2 {
   background: -webkit-linear-gradient(right, #b6fa79, #41963c);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-family: "Kaushan Script", cursive;
+  font-family: "Kaushan Script";
   font-size: 1.6em;
   padding-top: 50%;
 }

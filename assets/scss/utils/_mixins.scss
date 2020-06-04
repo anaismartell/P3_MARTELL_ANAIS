@@ -15,11 +15,9 @@
     width: 70%;
     height: auto;
     margin:auto;
-    margin-bottom: 5%;
+    margin-bottom: 10%;
     box-shadow: 0px 0px 8px 1px #a2a5a4;
     border-radius: 5px; 
-    font-family: 'Caveat';
-    font-size: 1.2em;
 }
 
 /*Titres et sous-titres*/
@@ -33,7 +31,7 @@
 }
 
 @mixin chic-title {
-    background: -webkit-linear-gradient(right, $chic-starter, $chic-main, $chic-dessert);
+    background: -webkit-linear-gradient(right,$chic-dessert, $chic-starter);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: 'Croissant One', cursive;
@@ -49,7 +47,7 @@
     background: -webkit-linear-gradient(right, $palette-light, $palette-dark);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-family:'Kaushan Script', cursive;
+    font-family:'Kaushan Script';
 }
 
 @mixin delice-title {

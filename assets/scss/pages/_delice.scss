@@ -5,8 +5,41 @@
         @include name-page;
         }
             .delice{
-            @include bloc-menu-page;
-            background-color: $menu-delice;
-            }  
-     }
-
+                @include bloc-menu-page;
+                font-family: 'Caveat';
+                font-size: 1.2em;
+                background-color: $menu-delice;
+                padding: 5%;
+                    .delice__title{
+                        @include delice-title;
+                        font-size: 3em;
+                        text-align: center;
+                        margin-bottom: 10%;
+                        }
+                    .delice__undertitle{
+                        display: flex;
+                        justify-content: space-between;
+                        margin-top: 5%;
+                            .delice_bar_left, .delice_bar_right{
+                                width: 30%;
+                                height: 1%;
+                                }
+                            h3{
+                                font-size: 1.5em;
+                                line-height: 0.2em; 
+                                margin-bottom: 5%;                           
+                                }  
+                            }
+                    .name, .price {
+                        list-style-type: none;
+                        padding-bottom: 2%;
+                        font-size: 1.2em;
+                    }
+                    .price{
+                        position: absolute;
+                        margin-left: 60%;
+                        margin-top: -3%; 
+                    }
+                    
+                }
+        }

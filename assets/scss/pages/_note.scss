@@ -6,6 +6,8 @@
         }
             .note{
             @include bloc-menu-page;
+            font-family: 'Caveat';
+            font-size: 1.2em;
             background-color: $menu-note;
             padding-right: 5%;
             padding-left: 5%;
@@ -44,12 +46,20 @@
                     margin-left: 60%;
                     margin-top: -3%; 
                 }
-               
-                
                 .note__bottom{
-                    
+                    position: relative;
+                    display: flex;
+                    justify-content: center;
+                    margin: 5%;
+                    .note_music_bottom{
+                        height: 50px;
+                        width: 50px;
+                    }
+                    span {
+                        @include note-title;
+                        font-size: 2em;
                 }
 
-            }  
+                }
+            }
      }
-

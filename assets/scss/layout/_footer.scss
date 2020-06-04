@@ -1,8 +1,11 @@
 footer {
     background-color: $header;
-    height: 100px;
+    height: 50px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
+    position: fixed;
+    bottom: 0;
         .footer__text{
         color: $titlefixed;
         font-size: 1.2em;
@@ -10,6 +13,6 @@ footer {
         text-decoration: none;   
         margin-left: 5%;
         margin-right: 5%;
-        padding-top:3%;
+        padding-top: 1%;
     }
 }

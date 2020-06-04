@@ -2,11 +2,53 @@
     display: flex;
     flex-direction: column;
         .link__resto{
-        @include name-page;
+            @include name-page;
         }
             .chic{
-            @include bloc-menu-page;
-            background-color: $menu-chic;
-            }  
-     }
-
+                @include bloc-menu-page;
+                font-family: 'Source Serif';
+                background-color: $menu-chic;
+                padding: 5%;
+                    .chic__title{
+                        @include chic-title;
+                        font-size: 2em;
+                        text-align: center;
+                        margin-bottom: 10%;
+                        }
+                    .chic__undertitle{
+                        display: flex;
+                        justify-content: space-between;
+                        margin-top: 5%;
+                        .chic_bar_left, .chic_bar_right{
+                                width: 30%;
+                                height: 1%;
+                                }
+                            h3{
+                                font-size: 1.5em;
+                                line-height: 0.2em; 
+                                margin-bottom: 5%;                           
+                                }  
+                        }
+                    .name, .price {
+                        list-style-type: none;
+                        padding-bottom: 2%;
+                        font-size: 1.2em;
+                    }
+                    .price{
+                        position: absolute;
+                        margin-left: 60%;
+                        margin-top: -3%; 
+                    }
+                    #en__appetit{
+                        color: $chic-starter;
+                    }
+                    #plaisir__papilles{
+                        color: $chic-main;
+                    }
+                    #gourmandises__sucrees{
+                        color: $chic-dessert;
+                    }
+                }
+                
+        
+    }
