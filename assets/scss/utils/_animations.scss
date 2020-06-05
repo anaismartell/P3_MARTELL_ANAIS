@@ -1,0 +1,30 @@
+@-webkit-keyframes wiggle{
+    0% {-webkit-transform: translate(5px, 5px);}
+    20% {-webkit-transform: translate(-5px, -5px);}
+    40% {-webkit-transform: translate(5px, 5px);}
+    60% {-webkit-transform: translate(-5px, -5px);}
+    80% {-webkit-transform: translate(5px, 5px);}
+    100% {-webkit-transform: translate(-5px, -5px);}
+}
+.footer__text {
+    display:inline-block;
+    &:hover{
+    -webkit-animation-name: wiggle;
+    -webkit-animation-duration:1s;
+    -webkit-animation-iteration-count: infinite;
+    }
+}
+
+@-webkit-keyframes ptsuspension{
+    
+
+}
+
+.prochainement__point{
+    animation-name: ptsuspension;
+    animation-duration: 900ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    transition-timing-function: ease-in-out;
+    animation-delay: 600ms;
+}
