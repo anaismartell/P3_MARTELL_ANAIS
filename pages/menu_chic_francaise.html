@@ -2,7 +2,25 @@
 <html lang="fr">
 	<head>
     	<meta charset="UTF-8">
-    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--référencement Facebook-->
+        <meta property="og:title" content="Menu Chic à la française - Ohmyfood" />
+        <meta property="og:url" content="" />
+        <meta property="og:image" content="assets/images/logoOhmyfood.png" />
+        <meta property="og:description" content="Découvrez le menu : Chic à la française sur Ohmyfood"/>
+        <meta property="og:type" content="website" />
+        <!--référencement twitter-->
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="Menu Chic à la française - Ohmyfood">
+        <meta name="twitter:url" content=""/>
+        <meta name="twitter:description" content="Découvrez le menu : Chic à la française sur Ohmyfood"/>
+        <meta name="twitter:image" content="../assets/images/logoOhmyfood.png">
+        <!--référencement navigateur-->
+        <meta name="author" content="Anaïs Martell" />
+        <meta name="publisher" content="Anaïs Martell" />
+        <meta name="copyright"content="Copyright 2020 Anaïs Martell. All Rights reserved."/>
+        <meta name="keywords" content="Projet n°3 Ohmyfood" />
+        <meta name="description" content="Découvrez le menu : Chic à la française sur Ohmyfood"/>
     	<link rel="stylesheet" href="../assets/scss/style.css" />
     	<link href="https://fonts.googleapis.com/css2?family=Caveat&family=Croissant+One&family=Dancing+Script:wght@500&family=Devonshire&family=Kaushan+Script&family=Montserrat:wght@400;700&family=Source+Serif+Pro:wght@600&display=swap" rel="stylesheet">
    		<title>Menu Le chic à la française - Ohmyfood</title>
@@ -35,14 +53,22 @@
                     <img class="chic_bar_right" src="../assets/images/chic_starter_right.png" alt="rightbar" />
                 </div>
                 <!--liste des entrées-->
-                <ul class="chic__starter">
-                    <li class="name">Tartare de poulpe acidulé aux zests d'orange</li>
-                    <li class="price">79€</li>
-                    <li class="name">Velouté de légumes d'antan</li>
-                    <li class="price">57€</li>
-                    <li class="name">Soupe à l'oignon revisitée</li>
-                    <li class="price">57€</li>
-                </ul>
+                <div class="container">
+                    <div class="name">
+                        <ul>
+                            <li class="name">Tartare de poulpe acidulé aux zests d'orange</li>
+                            <li class="name">Velouté de légumes d'antan</li>
+                            <li class="name">Soupe à l'oignon revisitée</li>
+                        </ul>
+                    </div>
+                    <div class="price">
+                        <ul>
+                            <li class="price">79€</li>
+                            <li class="price">57€</li>
+                            <li class="price">57€</li>
+                        </ul>
+                    </div>
+                </div> <!--fin liste des entrées-->   
 			</section> <!--fin section des entrées-->
 
 			<!--section des plats-->
@@ -54,14 +80,22 @@
                     <img class="chic_bar_right" src="../assets/images/chic_main_right.png" alt="rightbar" />
                 </div>
                 <!--liste des plats-->
-                <ul class="chic__maincourse">
-                    <li class="name">Coquilles de Saint-Jacques accompagnées d'une purée de panais</li>
-                    <li class="price">95€</li>
-                    <li class="name">Magret de canard et parmentier de pommes de terres</li>
-                    <li class="price">88€</li>
-                    <li class="name">Pigeonneau d'Ille et Vilaine sur son lit de gnocchis aux légumes</li>
-                    <li class="price">175€</li>
-                </ul>
+                <div class="container">
+                    <div class="name">
+                        <ul>
+                            <li class="name">Coquilles de Saint-Jacques accompagnées d'une purée de panais</li>
+                            <li class="name">Magret de canard et parmentier de pommes de terres</li>
+                            <li class="name">Pigeonneau d'Ille et Vilaine sur son lit de gnocchis aux légumes</li>
+                        </ul>
+                    </div>
+                    <div class="price">
+                        <ul>
+                            <li class="price">95€</li>
+                            <li class="price">88€</li>
+                            <li class="price">175€</li>
+                        </ul>
+                    </div>
+                </div> <!--fin liste des plats-->  
             </section> <!--fin section des plats-->
                
             <!--section des plats-->
@@ -73,13 +107,17 @@
                     <img class="chic_bar_right" src="../assets/images/chic_dessert_right.png" alt="rightbar" />
                 </div>
                 <!--liste des desserts-->
-                <ul class="chic__dessert">
-                    <li class="name">Pétales de violettes glacés et purée de noisettes</li>
-                    <li class="name">Fondant au chocolat revisité</li>
-                    <li class="name">Millefeuille croustillant</li>
-                </ul>
+                <div class="container">
+                    <div class="name">
+                        <ul>
+                            <li class="name">Coquilles de Saint-Jacques accompagnées d'une purée de panais</li>
+                            <li class="name">Magret de canard et parmentier de pommes de terres</li>
+                            <li class="name">Pigeonneau d'Ille et Vilaine sur son lit de gnocchis aux légumes</li>
+                        </ul>
+                    </div>
+                </div><!--fin liste des desserts-->  
             </section> <!--fin section des desserts-->
-        </main>
+        </main> <!--fin main content-->
 
   <!--footer prochainement-->
     <footer>

@@ -2,64 +2,151 @@
     display: flex;
     flex-direction: column;
         .link__resto{
-        @include name-page;
+            @include name-page;
         }
             .note{
-            @include bloc-menu-page;
-            font-family: 'Caveat';
-            font-size: 1.2em;
-            background-color: $menu-note;
-            padding-right: 5%;
-            padding-left: 5%;
-                .note__musictop{
-                    height: 100px;
-                    width: 100px;
-                    display: block;
-                    margin: auto;
-                    margin-top: 5%;
-                }
-                .note__title{
-                    @include note-title;
-                    font-size: 3em;
-                    text-align: center;
-                    line-height: 0;
+                @include bloc-menu-page;
+                font-family: 'Caveat';
+                font-size: 1.2em;
+                background-color: $menu-note;
+                padding-right: 5%;
+                padding-left: 5%;
+                    .note__musictop{
+                        height: 100px;
+                        width: 100px;
+                        display: block;
+                        margin: auto;
+                        margin-top: 5%;
                     }
-                .note__undertitle{
-                    display: flex;
-                    justify-content: space-between;
-                    .note_bar_left, .note_bar_right{
-                        width: 40%;
-                        height: 1%;
-                        }
-                        h3{
-                            font-size: 1.5em;
-                            line-height: 0.2em;                            
-                            }  
+                    .note__title{
+                        @include note-title;
+                        font-size: 3em;
+                        text-align: center;
+                        line-height: 0;
                     }
-                .name, .price {
-                    list-style-type: none;
-                    padding-bottom: 2%;
-                    font-size: 1.2em;
-                }
-                .price{
-                    position: absolute;
-                    margin-left: 60%;
-                    margin-top: -3%; 
-                }
-                .note__bottom{
-                    position: relative;
-                    display: flex;
-                    justify-content: center;
-                    margin: 5%;
-                    .note_music_bottom{
-                        height: 50px;
-                        width: 50px;
+                    .note__undertitle{
+                        display: flex;
+                        justify-content: space-between;
+                            .note_bar_left, .note_bar_right{
+                                width: 40%;
+                                height: 1%;
+                                margin-top: 2%;
+                            }
+                            h3{
+                                font-size: 1.5em;
+                                background: linear-gradient(to top, rgb(63, 18, 25) 0%,rgb(63, 18, 25) 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
+                                transition: background-size 0.5s;
+                                    &:hover {
+                                        background-size: 100% 100%;
+                                    }   
+                            }
+                    }
+                    .container{
+                        display: flex;
+                        justify-content: space-between;
+                        margin-right: 3%; 
+                            li{
+                                list-style-type: none;
+                                font-size: 1.2em;
+                                line-height: 2.5em;
+                            }     
+                    }
+                    .note__bottom{
+                        position: relative;
+                        display: flex;
+                        justify-content: center;
+                        margin: 5%;
+                            .note_music_bottom{
+                                height: 50px;
+                                width: 50px;
                     }
                     span {
                         @include note-title;
                         font-size: 2em;
-                }
-
-                }
+                    }
+                 }
             }
      }
+
+
+/* mediaqueries petits mobiles*/
+
+@media screen and (max-width:360px) {
+
+.main__pages {
+    display: flex;
+    flex-direction: column;
+        .link__resto{
+            @include name-page;
+        }
+    .note{
+        @include bloc-menu-page;
+        font-family: 'Caveat';
+        font-size: 0.8em;
+        background-color: $menu-note;
+            .note__musictop{
+                height: 50px;
+                width: 50px;
+                display: block;
+                margin: auto;
+                margin-top: 5%;
+            }
+            .note__title{
+                @include note-title;
+                font-size: 1em;
+                text-align: center;
+                line-height: 0;
+            }
+            .note__undertitle{
+                display: flex;  
+                    .note_bar_left, .note_bar_right{
+                        width: 30%;
+                        height: 1%;
+                        margin-top: 2%;
+                    }
+                    h3{
+                        font-size: 0.7em;
+                        background: linear-gradient(to top, rgb(63, 18, 25) 0%,rgb(63, 18, 25) 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
+                        transition: background-size 0.5s;
+                            &:hover {
+                                background-size: 100% 100%;
+                            }   
+                    }
+            }
+            .container{
+                display: flex;
+                    li{
+                        list-style-type: none;
+                        font-size: 0.5em;
+                    }     
+            }
+            .note__bottom{
+                position: relative;
+                display: flex;
+                justify-content: center;
+                margin: 5%;
+                    .note_music_bottom{
+                        height: 50px;
+                        width: 50px;
+            }
+            span {
+                @include note-title;
+                font-size: 1em;
+            }
+         }
+    }
+    }
+    
+} /* fin mediaqueries petits mobiles*/
+
+/* mediaqueries grands mobiles*/
+
+@media screen and (min-width: 360px) and (max-width:767px) {
+    
+} /* fin des mediaqueries grands téléphone*/
+
+/* mediaqueries tablette*/
+
+@media screen and (min-width:768px) and (max-width:1024px) {
+
+}

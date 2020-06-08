@@ -1,21 +1,23 @@
+@charset "UTF-8";
+/*wiggle effect*/
 @-webkit-keyframes wiggle {
   0% {
-    -webkit-transform: translate(5px, 5px);
+    -webkit-transform: translate(5px, 0px);
   }
   20% {
-    -webkit-transform: translate(-5px, -5px);
+    -webkit-transform: translate(-5px, 0px);
   }
   40% {
-    -webkit-transform: translate(5px, 5px);
+    -webkit-transform: translate(5px, 0px);
   }
   60% {
-    -webkit-transform: translate(-5px, -5px);
+    -webkit-transform: translate(-5px, 0px);
   }
   80% {
-    -webkit-transform: translate(5px, 5px);
+    -webkit-transform: translate(5px, 0px);
   }
   100% {
-    -webkit-transform: translate(-5px, -5px);
+    -webkit-transform: translate(-5px, 0px);
   }
 }
 .footer__text {
@@ -27,14 +29,42 @@
   -webkit-animation-iteration-count: infinite;
 }
 
-@-webkit-keyframes ptsuspension {}
-.prochainement__point {
-  animation-name: ptsuspension;
-  animation-duration: 900ms;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  transition-timing-function: ease-in-out;
-  animation-delay: 600ms;
+/*animation points de suspension*/
+@-webkit-keyframes ptsuspension {
+  0% {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  33% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+  66% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+}
+.point__loader .prochainement__point:nth-child(3) {
+  -webkit-animation: ptsuspension 2s 100ms infinite ease-in-out;
+  animation: ptsuspension 2s 100ms infinite ease-in-out;
+}
+
+.point__loader .prochainement__point:nth-child(2) {
+  -webkit-animation: ptsuspension 2s 200ms infinite ease-in-out;
+  animation: ptsuspension 2s 200ms infinite ease-in-out;
+}
+
+.point__loader .prochainement__point:nth-child(1) {
+  -webkit-animation: ptsuspension 2s 300ms infinite ease-in-out;
+  animation: ptsuspension 2s 300ms infinite ease-in-out;
+}
+
+.point__loader {
+  display: inline-block;
 }
 
 /*Blocs menus*/
@@ -50,7 +80,10 @@ button span {
   font-family: "Montserrat";
   color: #fac948;
 }
-button .prochainement__point {
+button .point__loader {
+  width: 20%;
+}
+button .point__loader .prochainement__point {
   height: 7px;
   width: 7px;
   padding-right: 1%;
@@ -131,32 +164,57 @@ footer .footer__text {
 .main__pages .chic .chic__undertitle .chic_bar_left, .main__pages .chic .chic__undertitle .chic_bar_right {
   width: 30%;
   height: 1%;
+  margin-top: 1%;
 }
 .main__pages .chic .chic__undertitle h3 {
   font-size: 1.5em;
-  line-height: 0.2em;
-  margin-bottom: 5%;
 }
-.main__pages .chic .name, .main__pages .chic .price {
+.main__pages .chic .container {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 3%;
+}
+.main__pages .chic .container li {
   list-style-type: none;
-  padding-bottom: 2%;
   font-size: 1.2em;
-}
-.main__pages .chic .price {
-  position: absolute;
-  margin-left: 60%;
-  margin-top: -3%;
+  line-height: 2.5em;
 }
 .main__pages .chic #en__appetit {
   color: #c67412;
 }
+.main__pages .chic #en__appetit h3 {
+  background: linear-gradient(to top, #c67412 0%, #c67412 10%, transparent 10.01%) no-repeat left bottom/0 100%;
+  transition: background-size 0.5s;
+}
+.main__pages .chic #en__appetit h3:hover {
+  background-size: 100% 100%;
+}
 .main__pages .chic #plaisir__papilles {
   color: #a26196;
+}
+.main__pages .chic #plaisir__papilles h3 {
+  background: linear-gradient(to top, #a26196 0%, #a26196 10%, transparent 10.01%) no-repeat left bottom/0 100%;
+  transition: background-size 0.5s;
+}
+.main__pages .chic #plaisir__papilles h3:hover {
+  background-size: 100% 100%;
 }
 .main__pages .chic #gourmandises__sucrees {
   color: #7252cd;
 }
+.main__pages .chic #gourmandises__sucrees h3 {
+  background: linear-gradient(to top, #7252cd 0%, #7252cd 10%, transparent 10.01%) no-repeat left bottom/0 100%;
+  transition: background-size 0.5s;
+}
+.main__pages .chic #gourmandises__sucrees h3:hover {
+  background-size: 100% 100%;
+}
 
+/* mediaqueries petits mobiles*/
+/* fin mediaqueries petits mobiles*/
+/* mediaqueries grands mobiles*/
+/* fin des mediaqueries grands téléphone*/
+/* mediaqueries tablette*/
 .main__pages {
   display: flex;
   flex-direction: column;
@@ -197,23 +255,48 @@ footer .footer__text {
 .main__pages .delice .delice__undertitle .delice_bar_left, .main__pages .delice .delice__undertitle .delice_bar_right {
   width: 30%;
   height: 1%;
+  margin-top: 2%;
 }
 .main__pages .delice .delice__undertitle h3 {
   font-size: 1.5em;
-  line-height: 0.2em;
-  margin-bottom: 5%;
 }
-.main__pages .delice .name, .main__pages .delice .price {
+.main__pages .delice .container {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 3%;
+}
+.main__pages .delice .container li {
   list-style-type: none;
-  padding-bottom: 2%;
   font-size: 1.2em;
+  line-height: 2.5em;
 }
-.main__pages .delice .price {
-  position: absolute;
-  margin-left: 60%;
-  margin-top: -3%;
+.main__pages .delice #pour__commencer h3 {
+  background: linear-gradient(to top, #0228dd 0%, #0228dd 10%, transparent 10.01%) no-repeat left bottom/0 100%;
+  transition: background-size 0.5s;
+}
+.main__pages .delice #pour__commencer h3:hover {
+  background-size: 100% 100%;
+}
+.main__pages .delice #pour__continuer h3 {
+  background: linear-gradient(to top, #0670f5 0%, #0670f5 10%, transparent 10.01%) no-repeat left bottom/0 100%;
+  transition: background-size 0.5s;
+}
+.main__pages .delice #pour__continuer h3:hover {
+  background-size: 100% 100%;
+}
+.main__pages .delice #pour__terminer h3 {
+  background: linear-gradient(to top, #259ef9 0%, #259ef9 10%, transparent 10.01%) no-repeat left bottom/0 100%;
+  transition: background-size 0.5s;
+}
+.main__pages .delice #pour__terminer h3:hover {
+  background-size: 100% 100%;
 }
 
+/* mediaqueries petits mobiles*/
+/* fin mediaqueries petits mobiles*/
+/* mediaqueries grands mobiles*/
+/* fin des mediaqueries grands téléphone*/
+/* mediaqueries tablette*/
 .main__pages {
   display: flex;
   flex-direction: column;
@@ -260,20 +343,25 @@ footer .footer__text {
 .main__pages .note .note__undertitle .note_bar_left, .main__pages .note .note__undertitle .note_bar_right {
   width: 40%;
   height: 1%;
+  margin-top: 2%;
 }
 .main__pages .note .note__undertitle h3 {
   font-size: 1.5em;
-  line-height: 0.2em;
+  background: linear-gradient(to top, #3f1219 0%, #3f1219 10%, transparent 10.01%) no-repeat left bottom/0 100%;
+  transition: background-size 0.5s;
 }
-.main__pages .note .name, .main__pages .note .price {
+.main__pages .note .note__undertitle h3:hover {
+  background-size: 100% 100%;
+}
+.main__pages .note .container {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 3%;
+}
+.main__pages .note .container li {
   list-style-type: none;
-  padding-bottom: 2%;
   font-size: 1.2em;
-}
-.main__pages .note .price {
-  position: absolute;
-  margin-left: 60%;
-  margin-top: -3%;
+  line-height: 2.5em;
 }
 .main__pages .note .note__bottom {
   position: relative;
@@ -292,6 +380,89 @@ footer .footer__text {
   font-size: 2em;
 }
 
+/* mediaqueries petits mobiles*/
+@media screen and (max-width: 360px) {
+  .main__pages {
+    display: flex;
+    flex-direction: column;
+  }
+  .main__pages .link__resto {
+    position: relative;
+    margin-top: -5%;
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 1.5em;
+  }
+  .main__pages .note {
+    width: 70%;
+    height: auto;
+    margin: auto;
+    margin-bottom: 10%;
+    box-shadow: 0px 0px 8px 1px #a2a5a4;
+    border-radius: 5px;
+    font-family: "Caveat";
+    font-size: 0.8em;
+    background-color: #fcdfda;
+  }
+  .main__pages .note .note__musictop {
+    height: 50px;
+    width: 50px;
+    display: block;
+    margin: auto;
+    margin-top: 5%;
+  }
+  .main__pages .note .note__title {
+    color: #412023;
+    font-family: "Devonshire", cursive;
+    font-weight: lighter;
+    font-size: 1em;
+    text-align: center;
+    line-height: 0;
+  }
+  .main__pages .note .note__undertitle {
+    display: flex;
+  }
+  .main__pages .note .note__undertitle .note_bar_left, .main__pages .note .note__undertitle .note_bar_right {
+    width: 30%;
+    height: 1%;
+    margin-top: 2%;
+  }
+  .main__pages .note .note__undertitle h3 {
+    font-size: 0.7em;
+    background: linear-gradient(to top, #3f1219 0%, #3f1219 10%, transparent 10.01%) no-repeat left bottom/0 100%;
+    transition: background-size 0.5s;
+  }
+  .main__pages .note .note__undertitle h3:hover {
+    background-size: 100% 100%;
+  }
+  .main__pages .note .container {
+    display: flex;
+  }
+  .main__pages .note .container li {
+    list-style-type: none;
+    font-size: 0.5em;
+  }
+  .main__pages .note .note__bottom {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: 5%;
+  }
+  .main__pages .note .note__bottom .note_music_bottom {
+    height: 50px;
+    width: 50px;
+  }
+  .main__pages .note .note__bottom span {
+    color: #412023;
+    font-family: "Devonshire", cursive;
+    font-weight: lighter;
+    font-size: 1em;
+  }
+}
+/* fin mediaqueries petits mobiles*/
+/* mediaqueries grands mobiles*/
+/* fin des mediaqueries grands téléphone*/
+/* mediaqueries tablette*/
 .main__pages {
   display: flex;
   flex-direction: column;
@@ -332,23 +503,32 @@ footer .footer__text {
 .main__pages .palette .palette__undertitle .palette_left, .main__pages .palette .palette__undertitle .palette_right {
   width: 30%;
   height: 1%;
+  margin-top: 2%;
 }
 .main__pages .palette .palette__undertitle h3 {
   font-size: 1.5em;
-  line-height: 0.2em;
-  margin-bottom: 5%;
+  background: linear-gradient(to top, #4da042 0%, #4da042 10%, transparent 10.01%) no-repeat left bottom/0 100%;
+  transition: background-size 0.5s;
 }
-.main__pages .palette .name, .main__pages .palette .price {
+.main__pages .palette .palette__undertitle h3:hover {
+  background-size: 100% 100%;
+}
+.main__pages .palette .container {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 3%;
+}
+.main__pages .palette .container li {
   list-style-type: none;
-  padding-bottom: 2%;
   font-size: 1.2em;
-}
-.main__pages .palette .price {
-  position: absolute;
-  margin-left: 60%;
-  margin-top: -3%;
+  line-height: 2.5em;
 }
 
+/* mediaqueries petits mobiles*/
+/* fin mediaqueries petits mobiles*/
+/* mediaqueries grands mobiles*/
+/* fin des mediaqueries grands téléphone*/
+/* mediaqueries tablette*/
 #mentions__legales {
   margin: 5%;
   text-align: justify;
@@ -520,6 +700,496 @@ button {
   margin: auto;
   margin-top: 5%;
   margin-bottom: 5%;
+}
+
+/* mediaqueries petits mobiles*/
+@media screen and (max-width: 360px) {
+  main {
+    flex-wrap: wrap;
+  }
+  main .menu__1 {
+    height: 350px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0px 0px 8px 1px #a2a5a4;
+    border-radius: 5px;
+    background-color: #fcdfda;
+  }
+  main .menu__1 .link {
+    transform: scale(1);
+    transition: transform 300ms ease-in-out;
+    opacity: 1;
+  }
+  main .menu__1 .link:hover {
+    transform: scale(1.15);
+    opacity: 0.5;
+  }
+  main .menu__1 a {
+    text-decoration: none;
+  }
+  main .menu__1 h2 {
+    color: #412023;
+    font-family: "Devonshire", cursive;
+    font-weight: lighter;
+    font-size: 2em;
+    margin-top: 0;
+    line-height: 0.8em;
+  }
+  main .menu__1 h3 {
+    font-family: "Caveat";
+    font-size: 2.5em;
+    font-weight: lighter;
+    color: #412023;
+    line-height: 0em;
+  }
+  main .menu__1 .note__musictop {
+    position: relative;
+    margin-top: 40%;
+    height: 50px;
+    width: 50px;
+  }
+  main .menu__2 {
+    height: 350px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0px 0px 8px 1px #a2a5a4;
+    border-radius: 5px;
+    background-color: #fff5fe;
+    margin-top: 10%;
+  }
+  main .menu__2 .link {
+    transform: scale(1);
+    transition: transform 300ms ease-in-out;
+    opacity: 1;
+  }
+  main .menu__2 .link:hover {
+    transform: scale(1.15);
+    opacity: 0.5;
+  }
+  main .menu__2 a {
+    text-decoration: none;
+  }
+  main .menu__2 h2 {
+    background: -webkit-linear-gradient(right, #7252cd, #c67412);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Croissant One", cursive;
+    font-size: 1.2em;
+    padding-top: 50%;
+  }
+  main .menu__2 h3 {
+    font-family: "Source Serif Pro", serif;
+    color: #c67412;
+    font-size: 1.7em;
+    line-height: 1em;
+  }
+  main .menu__3 {
+    height: 350px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0px 0px 8px 1px #a2a5a4;
+    border-radius: 5px;
+    background-color: #edefef;
+    margin-top: 10%;
+  }
+  main .menu__3 .link {
+    transform: scale(1);
+    transition: transform 300ms ease-in-out;
+    opacity: 1;
+  }
+  main .menu__3 .link:hover {
+    transform: scale(1.15);
+    opacity: 0.5;
+  }
+  main .menu__3 a {
+    text-decoration: none;
+  }
+  main .menu__3 h2 {
+    background: -webkit-linear-gradient(right, #269cf9, #1a72f3, #2840df);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Dancing Script", cursive;
+    font-size: 1.6em;
+    padding-top: 50%;
+  }
+  main .menu__3 h3 {
+    font-family: "Caveat";
+    font-size: 2.5em;
+    font-weight: lighter;
+    color: #1a72f3;
+    line-height: 0em;
+  }
+  main .menu__4 {
+    height: 350px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0px 0px 8px 1px #a2a5a4;
+    border-radius: 5px;
+    background-color: #fdfffd;
+    margin-top: 10%;
+  }
+  main .menu__4 .link {
+    transform: scale(1);
+    transition: transform 300ms ease-in-out;
+    opacity: 1;
+  }
+  main .menu__4 .link:hover {
+    transform: scale(1.15);
+    opacity: 0.5;
+  }
+  main .menu__4 a {
+    text-decoration: none;
+  }
+  main .menu__4 h2 {
+    background: -webkit-linear-gradient(right, #b6fa79, #41963c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Kaushan Script";
+    font-size: 1.6em;
+    padding-top: 50%;
+  }
+  main .menu__4 h3 {
+    font-family: "Caveat";
+    font-size: 2.5em;
+    font-weight: lighter;
+    color: #41963c;
+    line-height: 0em;
+  }
+
+  button {
+    border: none;
+    display: block;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 30%;
+  }
+}
+/* fin mediaqueries petits mobiles*/
+/* mediaqueries grands mobiles*/
+@media screen and (min-width: 360px) and (max-width: 767px) {
+  main {
+    flex-wrap: wrap;
+  }
+  main .menu__1 {
+    height: 350px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0px 0px 8px 1px #a2a5a4;
+    border-radius: 5px;
+    background-color: #fcdfda;
+  }
+  main .menu__1 .link {
+    transform: scale(1);
+    transition: transform 300ms ease-in-out;
+    opacity: 1;
+  }
+  main .menu__1 .link:hover {
+    transform: scale(1.15);
+    opacity: 0.5;
+  }
+  main .menu__1 a {
+    text-decoration: none;
+  }
+  main .menu__1 h2 {
+    color: #412023;
+    font-family: "Devonshire", cursive;
+    font-weight: lighter;
+    font-size: 2em;
+    margin-top: 0;
+    line-height: 0.8em;
+  }
+  main .menu__1 h3 {
+    font-family: "Caveat";
+    font-size: 2.5em;
+    font-weight: lighter;
+    color: #412023;
+    line-height: 0em;
+  }
+  main .menu__1 .note__musictop {
+    position: relative;
+    margin-top: 40%;
+    height: 50px;
+    width: 50px;
+  }
+  main .menu__2 {
+    height: 350px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0px 0px 8px 1px #a2a5a4;
+    border-radius: 5px;
+    background-color: #fff5fe;
+    margin-top: 10%;
+  }
+  main .menu__2 .link {
+    transform: scale(1);
+    transition: transform 300ms ease-in-out;
+    opacity: 1;
+  }
+  main .menu__2 .link:hover {
+    transform: scale(1.15);
+    opacity: 0.5;
+  }
+  main .menu__2 a {
+    text-decoration: none;
+  }
+  main .menu__2 h2 {
+    background: -webkit-linear-gradient(right, #7252cd, #c67412);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Croissant One", cursive;
+    font-size: 1.2em;
+    padding-top: 50%;
+  }
+  main .menu__2 h3 {
+    font-family: "Source Serif Pro", serif;
+    color: #c67412;
+    font-size: 1.7em;
+    line-height: 1em;
+  }
+  main .menu__3 {
+    height: 350px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0px 0px 8px 1px #a2a5a4;
+    border-radius: 5px;
+    background-color: #edefef;
+    margin-top: 10%;
+  }
+  main .menu__3 .link {
+    transform: scale(1);
+    transition: transform 300ms ease-in-out;
+    opacity: 1;
+  }
+  main .menu__3 .link:hover {
+    transform: scale(1.15);
+    opacity: 0.5;
+  }
+  main .menu__3 a {
+    text-decoration: none;
+  }
+  main .menu__3 h2 {
+    background: -webkit-linear-gradient(right, #269cf9, #1a72f3, #2840df);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Dancing Script", cursive;
+    font-size: 1.6em;
+    padding-top: 50%;
+  }
+  main .menu__3 h3 {
+    font-family: "Caveat";
+    font-size: 2.5em;
+    font-weight: lighter;
+    color: #1a72f3;
+    line-height: 0em;
+  }
+  main .menu__4 {
+    height: 350px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0px 0px 8px 1px #a2a5a4;
+    border-radius: 5px;
+    background-color: #fdfffd;
+    margin-top: 10%;
+  }
+  main .menu__4 .link {
+    transform: scale(1);
+    transition: transform 300ms ease-in-out;
+    opacity: 1;
+  }
+  main .menu__4 .link:hover {
+    transform: scale(1.15);
+    opacity: 0.5;
+  }
+  main .menu__4 a {
+    text-decoration: none;
+  }
+  main .menu__4 h2 {
+    background: -webkit-linear-gradient(right, #b6fa79, #41963c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Kaushan Script";
+    font-size: 1.6em;
+    padding-top: 50%;
+  }
+  main .menu__4 h3 {
+    font-family: "Caveat";
+    font-size: 2.5em;
+    font-weight: lighter;
+    color: #41963c;
+    line-height: 0em;
+  }
+
+  button {
+    border: none;
+    display: block;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 30%;
+  }
+}
+/* fin des mediaqueries grands téléphone*/
+/* mediaqueries tablette*/
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  main {
+    flex-wrap: wrap;
+  }
+  main .menu__1 {
+    height: 350px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0px 0px 8px 1px #a2a5a4;
+    border-radius: 5px;
+    background-color: #fcdfda;
+    margin: 5%;
+  }
+  main .menu__1 .link {
+    transform: scale(1);
+    transition: transform 300ms ease-in-out;
+    opacity: 1;
+  }
+  main .menu__1 .link:hover {
+    transform: scale(1.15);
+    opacity: 0.5;
+  }
+  main .menu__1 a {
+    text-decoration: none;
+  }
+  main .menu__1 h2 {
+    color: #412023;
+    font-family: "Devonshire", cursive;
+    font-weight: lighter;
+    font-size: 2em;
+    margin-top: 0;
+    line-height: 0.8em;
+  }
+  main .menu__1 h3 {
+    font-family: "Caveat";
+    font-size: 2.5em;
+    font-weight: lighter;
+    color: #412023;
+    line-height: 0em;
+  }
+  main .menu__1 .note__musictop {
+    position: relative;
+    margin-top: 40%;
+    height: 50px;
+    width: 50px;
+  }
+  main .menu__2 {
+    height: 350px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0px 0px 8px 1px #a2a5a4;
+    border-radius: 5px;
+    background-color: #fff5fe;
+    margin: 5%;
+  }
+  main .menu__2 .link {
+    transform: scale(1);
+    transition: transform 300ms ease-in-out;
+    opacity: 1;
+  }
+  main .menu__2 .link:hover {
+    transform: scale(1.15);
+    opacity: 0.5;
+  }
+  main .menu__2 a {
+    text-decoration: none;
+  }
+  main .menu__2 h2 {
+    background: -webkit-linear-gradient(right, #7252cd, #c67412);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Croissant One", cursive;
+    font-size: 1.2em;
+    padding-top: 50%;
+  }
+  main .menu__2 h3 {
+    font-family: "Source Serif Pro", serif;
+    color: #c67412;
+    font-size: 1.7em;
+    line-height: 1em;
+  }
+  main .menu__3 {
+    height: 350px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0px 0px 8px 1px #a2a5a4;
+    border-radius: 5px;
+    background-color: #edefef;
+    margin: 5%;
+  }
+  main .menu__3 .link {
+    transform: scale(1);
+    transition: transform 300ms ease-in-out;
+    opacity: 1;
+  }
+  main .menu__3 .link:hover {
+    transform: scale(1.15);
+    opacity: 0.5;
+  }
+  main .menu__3 a {
+    text-decoration: none;
+  }
+  main .menu__3 h2 {
+    background: -webkit-linear-gradient(right, #269cf9, #1a72f3, #2840df);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Dancing Script", cursive;
+    font-size: 1.6em;
+    padding-top: 50%;
+  }
+  main .menu__3 h3 {
+    font-family: "Caveat";
+    font-size: 2.5em;
+    font-weight: lighter;
+    color: #1a72f3;
+    line-height: 0em;
+  }
+  main .menu__4 {
+    height: 350px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0px 0px 8px 1px #a2a5a4;
+    border-radius: 5px;
+    background-color: #fdfffd;
+    margin: 5%;
+  }
+  main .menu__4 .link {
+    transform: scale(1);
+    transition: transform 300ms ease-in-out;
+    opacity: 1;
+  }
+  main .menu__4 .link:hover {
+    transform: scale(1.15);
+    opacity: 0.5;
+  }
+  main .menu__4 a {
+    text-decoration: none;
+  }
+  main .menu__4 h2 {
+    background: -webkit-linear-gradient(right, #b6fa79, #41963c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Kaushan Script";
+    font-size: 1.6em;
+    padding-top: 50%;
+  }
+  main .menu__4 h3 {
+    font-family: "Caveat";
+    font-size: 2.5em;
+    font-weight: lighter;
+    color: #41963c;
+    line-height: 0em;
+  }
+
+  button {
+    border: none;
+    display: block;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 10%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

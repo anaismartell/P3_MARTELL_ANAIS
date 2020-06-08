@@ -1,10 +1,12 @@
+/*wiggle effect*/
+
 @-webkit-keyframes wiggle{
-    0% {-webkit-transform: translate(5px, 5px);}
-    20% {-webkit-transform: translate(-5px, -5px);}
-    40% {-webkit-transform: translate(5px, 5px);}
-    60% {-webkit-transform: translate(-5px, -5px);}
-    80% {-webkit-transform: translate(5px, 5px);}
-    100% {-webkit-transform: translate(-5px, -5px);}
+    0% {-webkit-transform: translate(5px, 0px);}
+    20% {-webkit-transform: translate(-5px, 0px);}
+    40% {-webkit-transform: translate(5px, 0px);}
+    60% {-webkit-transform: translate(-5px, 0px);}
+    80% {-webkit-transform: translate(5px, 0px);}
+    100% {-webkit-transform: translate(-5px, 0px);}
 }
 .footer__text {
     display:inline-block;
@@ -15,16 +17,43 @@
     }
 }
 
+/*animation points de suspension*/
+
 @-webkit-keyframes ptsuspension{
-    
-
+        0% {
+          opacity: 0;
+          transform: translateX(-40px);
+        }
+        33% {
+          opacity: 1;
+          transform: translateX(0px);
+        }
+        66% {
+          opacity: 1;
+          transform: translateX(0px);
+        }
+        100% {
+          opacity: 0;
+          transform: translateX(40px);
+        }
+      }
+      
+.point__loader .prochainement__point:nth-child(3){
+    -webkit-animation: ptsuspension 2s 100ms infinite ease-in-out;
+    animation: ptsuspension 2s 100ms infinite ease-in-out;
 }
 
-.prochainement__point{
-    animation-name: ptsuspension;
-    animation-duration: 900ms;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    transition-timing-function: ease-in-out;
-    animation-delay: 600ms;
+.point__loader .prochainement__point:nth-child(2){
+    -webkit-animation: ptsuspension 2s 200ms infinite ease-in-out; ;
+    animation: ptsuspension 2s 200ms infinite ease-in-out;
 }
+      
+.point__loader .prochainement__point:nth-child(1){
+    -webkit-animation: ptsuspension 2s 300ms infinite ease-in-out;;
+    animation: ptsuspension 2s 300ms infinite ease-in-out;
+}
+
+.point__loader{
+    display:inline-block;
+}
+

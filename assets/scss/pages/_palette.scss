@@ -23,26 +23,46 @@
                     .palette_left, .palette_right{
                         width: 30%;
                         height: 1%;
+                        margin-top: 2%;
                         }
                     h3{
                         font-size: 1.5em;
-                        line-height: 0.2em; 
-                        margin-bottom: 5%;                           
-                        }  
-                    }
-            .name, .price {
-                list-style-type: none;
-                padding-bottom: 2%;
-                font-size: 1.2em;
-            }
-            .price{
-                position: absolute;
-                margin-left: 60%;
-                margin-top: -3%; 
-            }
-            
+                        background: linear-gradient(to top, rgb(77, 160, 66) 0%,rgb(77, 160, 66) 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
+                        transition: background-size 0.5s;
+                        &:hover {
+                            background-size: 100% 100%;
+                          }        
+                    }  
+                }
+            .container{
+                display: flex;
+                justify-content: space-between;
+                margin-right: 3%; 
+                    li{
+                        list-style-type: none;
+                        font-size: 1.2em;
+                        line-height: 2.5em;
+                    }     
+            }   
         }
-    
 }
 
 
+/* mediaqueries petits mobiles*/
+
+@media screen and (max-width:360px) {
+   
+    
+} /* fin mediaqueries petits mobiles*/
+
+/* mediaqueries grands mobiles*/
+
+@media screen and (min-width: 360px) and (max-width:767px) {
+    
+} /* fin des mediaqueries grands téléphone*/
+
+/* mediaqueries tablette*/
+
+@media screen and (min-width:768px) and (max-width:1024px) {
+
+}

@@ -20,35 +20,73 @@
                         justify-content: space-between;
                         margin-top: 5%;
                         .chic_bar_left, .chic_bar_right{
-                                width: 30%;
-                                height: 1%;
-                                }
-                            h3{
-                                font-size: 1.5em;
-                                line-height: 0.2em; 
-                                margin-bottom: 5%;                           
-                                }  
+                            width: 30%;
+                            height: 1%;
+                            margin-top: 1%;
                         }
-                    .name, .price {
-                        list-style-type: none;
-                        padding-bottom: 2%;
-                        font-size: 1.2em;
+                        h3{
+                            font-size: 1.5em;
+                        }
                     }
-                    .price{
-                        position: absolute;
-                        margin-left: 60%;
-                        margin-top: -3%; 
-                    }
+                    .container{
+                        display: flex;
+                        justify-content: space-between;
+                        margin-right: 3%; 
+                            li{
+                                list-style-type: none;
+                                font-size: 1.2em;
+                                line-height: 2.5em;
+                            }     
+                        }
                     #en__appetit{
                         color: $chic-starter;
+                        h3{
+                            background: linear-gradient(to top, rgb(198, 116, 18) 0%,rgb(198, 116, 18) 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
+                            transition: background-size 0.5s;
+                            &:hover {
+                                background-size: 100% 100%;
+                            }
+                        }
                     }
                     #plaisir__papilles{
                         color: $chic-main;
+                        h3{
+                            background: linear-gradient(to top, rgb(162, 97, 150) 0%,rgb(162, 97, 150) 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
+                            transition: background-size 0.5s;
+                            &:hover {
+                                background-size: 100% 100%;
+                            }
+                        }
                     }
                     #gourmandises__sucrees{
                         color: $chic-dessert;
-                    }
-                }
-                
-        
+                        h3{
+                            background: linear-gradient(to top,rgb(114, 82, 205) 0%,rgb(114, 82, 205) 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
+                            transition: background-size 0.5s;
+                            &:hover {
+                                background-size: 100% 100%;
+                            }
+                        }
+                    }                
+            }
     }
+
+    
+/* mediaqueries petits mobiles*/
+
+@media screen and (max-width:360px) {
+   
+    
+} /* fin mediaqueries petits mobiles*/
+
+/* mediaqueries grands mobiles*/
+
+@media screen and (min-width: 360px) and (max-width:767px) {
+    
+} /* fin des mediaqueries grands téléphone*/
+
+/* mediaqueries tablette*/
+
+@media screen and (min-width:768px) and (max-width:1024px) {
+
+}

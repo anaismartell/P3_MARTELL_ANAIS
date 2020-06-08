@@ -8,9 +8,12 @@ button{
         font-family: 'Montserrat';
         color:$titlefixed;
     }
-    .prochainement__point{
-        height: 7px;
-        width: 7px;
-        padding-right: 1%;
+    .point__loader{
+        width: 20%;
+            .prochainement__point{
+                height: 7px;
+                width: 7px;
+                padding-right: 1%;
+            }
     }
 }

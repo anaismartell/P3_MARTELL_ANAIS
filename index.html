@@ -3,10 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--référencement Facebook-->
+    <meta property="og:title" content="Accueil - Ohmyfood" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="assets/images/logoOhmyfood.png" />
+    <meta property="og:description" content="Ohmyfood! est une entreprise de réservation de restaurants et de composition de menus
+    en ligne. Notre concept permet aux utilisateurs de réduire leur temps d’attente dans les
+    restaurants car leur menu est préparé à l’avance. Plus de perte de temps à consulter la carte !"/>
+    <meta property="og:type" content="website" />
+    <!--référencement twitter-->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Ohmyfood">
+    <meta name="twitter:url" content=""/>
+    <meta name="twitter:description" content="Ohmyfood! est une entreprise de réservation de restaurants et de composition de menus
+    en ligne. Notre concept permet aux utilisateurs de réduire leur temps d’attente dans les
+    restaurants car leur menu est préparé à l’avance. Plus de perte de temps à consulter la carte !"/>
+    <meta name="twitter:image" content="assets/images/logoOhmyfood.png">
+    <!--référencement navigateur-->
+    <meta name="author" content="Anaïs Martell" />
+    <meta name="publisher" content="Anaïs Martell" />
+    <meta name="copyright"content="Copyright 2020 Anaïs Martell. All Rights reserved."/>
+    <meta name="keywords" content="Projet n°3 Ohmyfood" />
+    <meta name="description" content="Ohmyfood! est une entreprise de réservation de restaurants et de composition de menus
+    en ligne. Notre concept permet aux utilisateurs de réduire leur temps d’attente dans les
+    restaurants car leur menu est préparé à l’avance. Plus de perte de temps à consulter la carte !"/>
     <link rel="stylesheet" href="assets/scss/style.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Croissant+One&family=Dancing+Script:wght@500&family=Devonshire&family=Kaushan+Script&family=Montserrat:wght@400;700&family=Source+Serif+Pro:wght@600&display=swap" rel="stylesheet">
     <title>Ohmyfood Accueil</title>
 </head>
+
 <body>
   <!--header -->
   <header>
@@ -26,7 +51,7 @@
             </div>
           </a>
         </div>
-      </section>
+      </section> <!--fin menu note enchantée-->
 
     <!--menu chic-->
       <section class="menu__2">
@@ -38,7 +63,7 @@
             </div>
           </a>
         </div>
-      </section>
+      </section> <!--fin menu chic-->
 
     <!--menu delice des papilles-->
       <section class="menu__3">
@@ -50,7 +75,7 @@
             </div>
           </a>
         </div>
-      </section>
+      </section> <!--fin menu delice des papilles-->
 
   <!--menu palette du goût-->
       <section class="menu__4">
@@ -62,21 +87,23 @@
             </div>  
           </a>
         </div>
-      </section>
+      </section> <!--fin menu palette du goût-->
     </main>
 
   <!--bouton prochainement-->
     <button>
       <span>Prochainement</span>
-      <img src="assets/images/point.png" alt="point" class="prochainement__point" />
-      <img src="assets/images/point.png" alt="point" class="prochainement__point" />
-      <img src="assets/images/point.png" alt="point" class="prochainement__point" />
-    </button>
+      <div class="point__loader">
+        <img src="assets/images/point.png" alt="point" class="prochainement__point" />
+        <img src="assets/images/point.png" alt="point" class="prochainement__point" />
+        <img src="assets/images/point.png" alt="point" class="prochainement__point" />
+      </div>
+    </button> <!--fin bouton prochainement-->
 
   <!--footer prochainement-->
     <footer>
       <a href="./pages/mentions_legales.html" class="footer__text">Mentions légales</a>
       <a href="mailto:contact@ohmyfood.com" class="footer__text">Contactez nous</a>
-    </footer>
+    </footer> <!--fin footer prochainement-->
   </body>
 </html>
