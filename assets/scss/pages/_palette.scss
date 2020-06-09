@@ -2,37 +2,37 @@
     display: flex;
     flex-direction: column;
         .link__resto{
-        @include name-page;
+            @include name-page;
         }
             .palette{
-            @include bloc-menu-page;
-            background-color: $menu-palette;
-            font-family: 'Caveat';
-            font-size: 1.2em;
-            padding: 3%;
-            .palette__title{
-                @include palette-title;
-                font-size: 3em;
-                text-align: center;
-                margin-bottom: 10%;
-                }
-            .palette__undertitle{
-                display: flex;
-                justify-content: space-between;
-                margin-top: 5%;
-                    .palette_left, .palette_right{
-                        width: 30%;
-                        height: 1%;
-                        margin-top: 2%;
+                @include bloc-menu-page;
+                background-color: $menu-palette;
+                font-family: 'Caveat';
+                font-size: 1.2em;
+                padding: 3%;
+                .palette__title{
+                    @include palette-title;
+                    font-size: 3em;
+                    text-align: center;
+                    margin-bottom: 10%;
+                    }
+                .palette__undertitle{
+                    display: flex;
+                    justify-content: space-between;
+                    margin-top: 5%;
+                        .palette_left, .palette_right{
+                            width: 30%;
+                            height: 1%;
+                            margin-top: 2%;
                         }
-                    h3{
-                        font-size: 1.5em;
-                        background: linear-gradient(to top, rgb(77, 160, 66) 0%,rgb(77, 160, 66) 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
-                        transition: background-size 0.5s;
-                        &:hover {
-                            background-size: 100% 100%;
-                          }        
-                    }  
+                        h3{
+                            font-size: 1.5em;
+                            background: linear-gradient(to top, rgb(77, 160, 66) 0%,rgb(77, 160, 66) 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
+                            transition: background-size 0.5s;
+                                &:hover {
+                                    background-size: 100% 100%;
+                                }        
+                        }  
                 }
             .container{
                 display: flex;
@@ -51,18 +51,99 @@
 /* mediaqueries petits mobiles*/
 
 @media screen and (max-width:360px) {
-   
+    .main__pages {
+        display: flex;
+        flex-direction: column;
+            .palette{
+                font-size: 1em;
+                background-color: $menu-palette;
+                margin-bottom: 30%;
+                    .palette__title{
+                        font-size: 1em;
+                    }
+                    .palette__undertitle{
+                        display: flex;  
+                            .palette_left, .palette_right{
+                                width: 30%;
+                                height: 1%;
+                            }
+                            h3{
+                                font-size: 0.5em;
+                            }
+                }
+                .container ul{
+                        padding: 0;
+                        margin:0;
+                            li{   
+                                white-space: nowrap;
+                                list-style-type: none;
+                                font-size: 0.5em;
+                            }    
+                }
+        }
+    }
     
 } /* fin mediaqueries petits mobiles*/
 
 /* mediaqueries grands mobiles*/
 
 @media screen and (min-width: 360px) and (max-width:767px) {
-    
+        .main__pages {
+            display: flex;
+            flex-direction: column;
+                .palette{
+                    font-size: 1em;
+                    background-color: $menu-palette;
+                    margin-bottom: 30%;
+                        .palette__title{
+                            font-size: 1em;
+                        }
+                        .palette__undertitle{
+                            display: flex;  
+                                .palette_left, .palette_right{
+                                    width: 30%;
+                                    height: 1%;
+                                }
+                                h3{
+                                    font-size: 0.6em;
+                                }
+                    }
+                    .container ul{
+                            padding: 0;
+                            margin:0;
+                                li{   
+                                    white-space: nowrap;
+                                    list-style-type: none;
+                                    font-size: 0.5em;
+                                }    
+                    }
+            }
+        }
 } /* fin des mediaqueries grands téléphone*/
 
 /* mediaqueries tablette*/
 
 @media screen and (min-width:768px) and (max-width:1024px) {
-
+    .main__pages {
+        display: flex;
+        flex-direction: column;
+                .palette{
+                    font-size: 0.8em;
+                        .palette__undertitle{
+                            display: flex;
+                            justify-content: space-between;
+                                .palette_left, .palette_right{
+                                    width: 30%;
+                                    height: 1%;
+                                }
+                                h3{
+                                    font-size: 1.3em;
+                                }
+                        }
+                        .container ul{
+                                    padding: 0;
+                                    margin: 0;
+                                }
+                }
+         }
 }

@@ -7,12 +7,48 @@ footer {
     position: fixed;
     bottom: 0;
         .footer__text{
-        color: $titlefixed;
-        font-size: 1.2em;
-        font-family: 'Montserrat', sans-serif;
-        text-decoration: none;   
-        margin-left: 5%;
-        margin-right: 5%;
-        padding-top: 1%;
-    }
+            color: $titlefixed;
+            font-size: 1.2em;
+            font-family: 'Montserrat', sans-serif;
+            text-decoration: none;   
+            margin-left: 5%;
+            margin-right: 5%;
+            padding-top: 1%;
+        }
 }
+
+/* mediaqueries petits mobiles*/
+
+@media screen and (max-width:360px) {
+    footer {
+        background-color: $header;
+        height: 50px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        position: fixed;
+        bottom: 0;
+            .footer__text{
+                font-size: 0.8em;
+                padding-top: 5%;
+            }
+        }
+} /* fin mediaqueries petits mobiles*/
+
+/* mediaqueries grands mobiles*/
+
+@media screen and (min-width: 360px) and (max-width:767px) {
+    footer {
+        background-color: $header;
+        height: 50px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        position: fixed;
+        bottom: 0;
+            .footer__text{
+                font-size: 0.8em;
+                padding-top: 5%;
+            }
+        }
+} /* fin des mediaqueries grands téléphone*/

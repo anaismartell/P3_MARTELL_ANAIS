@@ -2,16 +2,43 @@ header{
     background-color: $header;
     height: 100px;
     text-align: center;
-    h1{
-       margin:0; 
-       padding-top: 1%;
-    }
-    .header__text{
-        font-family: 'Montserrat';
-        font-weight: bold;
-        font-size: 1.8em;
-        color: $titlefixed;
-        text-decoration: none;
-    }
+        h1{
+            margin:0; 
+            padding-top: 1%;
+        }
+        .header__text{
+            font-family: 'Montserrat';
+            font-weight: bold;
+            font-size: 1.8em;
+            color: $titlefixed;
+            text-decoration: none;
+        }
 }
 
+/* mediaqueries petits mobiles*/
+
+@media screen and (max-width:360px) {
+    header{
+        height: 80px;
+            h1{
+                padding-top: 2%;
+            }
+            .header__text{
+                font-size: 1.3em;
+            }
+    }
+} /* fin mediaqueries petits mobiles*/
+
+/* mediaqueries grands mobiles*/
+
+@media screen and (min-width: 360px) and (max-width:767px) {
+    header{
+        height: 80px;
+            h1{
+                padding-top: 2%;
+            }
+            .header__text{
+                font-size: 1.3em;
+            }
+    }
+} /* fin des mediaqueries grands téléphone*/
