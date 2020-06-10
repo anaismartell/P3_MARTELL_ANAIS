@@ -1,19 +1,85 @@
-button{
-    height: 50px;
+.prochainement{
+    height: 40px;
     width: 300px;
     background-color:$header;
     border-radius: 10px;
-    span{
-        font-size: 2em;
-        font-family: 'Montserrat';
-        color:$titlefixed;
-    }
-    .point__loader{
-        width: 20%;
-            .prochainement__point{
-                height: 7px;
-                width: 7px;
-                padding-right: 1%;
+    text-align: center;
+    padding-top: 1%;
+        span{
+            font-size: 1.5em;
+            font-family: 'Montserrat';
+            color:$titlefixed;
+        }
+        .point__loader{ 
+            width: 20%;
+            margin-top: 3%;
+                .prochainement__point{
+                    height: 7px;
+                    width: 7px;
+                    padding-right: 1%;
+                }       
+        }
+}
+
+
+/* mediaqueries petits mobiles*/
+
+@media screen and (max-width:360px) {
+    .prochainement{
+        height: 40px;
+        width: 200px;
+        background-color:$header;
+        border-radius: 10px;
+        text-align: center;
+        padding-top: 1%;
+            span{
+                font-size: 1em;
+                font-family: 'Montserrat';
+                color:$titlefixed;
+            }
+            .point__loader{ 
+                width: 20%;
+                margin-top: 3%;
+                    .prochainement__point{
+                        height: 4px;
+                        width: 4px;
+                        padding-right: 1%;
+                    }       
             }
     }
+    
+} /* fin mediaqueries petits mobiles*/
+
+/* mediaqueries grands mobiles*/
+
+@media screen and (min-width: 360px) and (max-width:767px) {
+    .prochainement{
+        height: 40px;
+        width: 300px;
+        background-color:$header;
+        border-radius: 10px;
+        text-align: center;
+        padding-top: 1%;
+            span{
+                font-size: 1.2em;
+                font-family: 'Montserrat';
+                color:$titlefixed;
+            }
+            .point__loader{ 
+                width: 20%;
+                margin-top: 3%;
+                    .prochainement__point{
+                        height: 5px;
+                        width: 5px;
+                        padding-right: 1%;
+                    }       
+            }
+    }
+     
+} /* fin des mediaqueries grands téléphone*/
+
+/* mediaqueries tablette*/
+
+@media screen and (min-width:768px) and (max-width:1024px) {
+    
 }

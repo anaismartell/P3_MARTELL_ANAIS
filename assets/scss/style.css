@@ -69,26 +69,82 @@
 
 /*Blocs menus*/
 /*Titres et sous-titres*/
-button {
-  height: 50px;
+.prochainement {
+  height: 40px;
   width: 300px;
   background-color: #589c87;
   border-radius: 10px;
+  text-align: center;
+  padding-top: 1%;
 }
-button span {
-  font-size: 2em;
+.prochainement span {
+  font-size: 1.5em;
   font-family: "Montserrat";
   color: #fac948;
 }
-button .point__loader {
+.prochainement .point__loader {
   width: 20%;
+  margin-top: 3%;
 }
-button .point__loader .prochainement__point {
+.prochainement .point__loader .prochainement__point {
   height: 7px;
   width: 7px;
   padding-right: 1%;
 }
 
+/* mediaqueries petits mobiles*/
+@media screen and (max-width: 360px) {
+  .prochainement {
+    height: 40px;
+    width: 200px;
+    background-color: #589c87;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 1%;
+  }
+  .prochainement span {
+    font-size: 1em;
+    font-family: "Montserrat";
+    color: #fac948;
+  }
+  .prochainement .point__loader {
+    width: 20%;
+    margin-top: 3%;
+  }
+  .prochainement .point__loader .prochainement__point {
+    height: 4px;
+    width: 4px;
+    padding-right: 1%;
+  }
+}
+/* fin mediaqueries petits mobiles*/
+/* mediaqueries grands mobiles*/
+@media screen and (min-width: 360px) and (max-width: 767px) {
+  .prochainement {
+    height: 40px;
+    width: 300px;
+    background-color: #589c87;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 1%;
+  }
+  .prochainement span {
+    font-size: 1.2em;
+    font-family: "Montserrat";
+    color: #fac948;
+  }
+  .prochainement .point__loader {
+    width: 20%;
+    margin-top: 3%;
+  }
+  .prochainement .point__loader .prochainement__point {
+    height: 5px;
+    width: 5px;
+    padding-right: 1%;
+  }
+}
+/* fin des mediaqueries grands téléphone*/
+/* mediaqueries tablette*/
 header {
   background-color: #589c87;
   height: 100px;
@@ -277,7 +333,7 @@ footer .footer__text {
     flex-direction: column;
   }
   .main__pages .chic {
-    font-size: 0.8em;
+    font-size: 0.5em;
     background-color: #fff5fe;
     margin-bottom: 30%;
   }
@@ -299,7 +355,6 @@ footer .footer__text {
     margin: 0;
   }
   .main__pages .chic .container ul li {
-    white-space: nowrap;
     list-style-type: none;
     font-size: 0.5em;
   }
@@ -1162,7 +1217,7 @@ main .menu__4 h3 {
   line-height: 0em;
 }
 
-button {
+.prochainement {
   border: none;
   display: block;
   margin: auto;
@@ -1187,7 +1242,7 @@ button {
     margin-top: 10%;
   }
 
-  button {
+  .prochainement {
     margin-top: 10%;
     margin-bottom: 30%;
   }
@@ -1210,7 +1265,7 @@ button {
     margin-top: 10%;
   }
 
-  button {
+  .prochainement {
     margin-top: 10%;
     margin-bottom: 30%;
   }
@@ -1234,7 +1289,7 @@ button {
     margin: 5%;
   }
 
-  button {
+  .prochainement {
     margin-bottom: 10%;
   }
 }
