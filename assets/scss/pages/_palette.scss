@@ -34,16 +34,18 @@
                                 }        
                         }  
                 }
-            .container{
-                display: flex;
-                justify-content: space-between;
-                margin-right: 3%; 
-                    li{
-                        list-style-type: none;
-                        font-size: 1.2em;
-                        line-height: 2.5em;
-                    }     
-            }   
+                .textcontent p{
+                    display: flex;
+                    justify-content: space-between;
+                    font-size: 1.2em;
+                    padding-left: 5%;
+                        span{
+                            display: inline-block;
+                            justify-self: flex-end;
+                            padding-right: 5%;
+                            font-weight: bold;
+                        }    
+                } 
         }
 }
 
@@ -59,26 +61,25 @@
                 background-color: $menu-palette;
                 margin-bottom: 30%;
                     .palette__title{
-                        font-size: 1em;
+                        font-size: 1.5em;
                     }
                     .palette__undertitle{
                         display: flex;  
                             .palette_left, .palette_right{
-                                width: 30%;
+                                width: 20%;
                                 height: 1%;
+                                margin-top: 10%;
                             }
                             h3{
-                                font-size: 0.5em;
+                                font-size: 1em;
                             }
                 }
-                .container ul{
-                        padding: 0;
-                        margin:0;
-                            li{   
-                                white-space: nowrap;
-                                list-style-type: none;
-                                font-size: 0.5em;
-                            }    
+                .textcontent p{
+                    text-align: center;
+                    display: flex;
+                    flex-direction: column-reverse; 
+                    font-size: 1em;
+                    padding-bottom: 5%;
                 }
         }
     }
@@ -96,26 +97,25 @@
                     background-color: $menu-palette;
                     margin-bottom: 30%;
                         .palette__title{
-                            font-size: 1em;
+                            font-size: 1.5em;
                         }
                         .palette__undertitle{
                             display: flex;  
                                 .palette_left, .palette_right{
-                                    width: 30%;
+                                    width: 20%;
                                     height: 1%;
+                                    margin-top: 7%;
                                 }
                                 h3{
-                                    font-size: 0.6em;
+                                    font-size: 1em;
                                 }
                     }
-                    .container ul{
-                            padding: 0;
-                            margin:0;
-                                li{   
-                                    white-space: nowrap;
-                                    list-style-type: none;
-                                    font-size: 0.5em;
-                                }    
+                    .textcontent p{
+                        text-align: center;
+                        display: flex;
+                        flex-direction: column-reverse; 
+                        font-size: 1em;
+                        padding-bottom: 5%;
                     }
             }
         }
@@ -140,10 +140,6 @@
                                     font-size: 1.3em;
                                 }
                         }
-                        .container ul{
-                                    padding: 0;
-                                    margin: 0;
-                                }
                 }
          }
 }

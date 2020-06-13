@@ -29,16 +29,18 @@
                                 font-size: 1.5em;                    
                                 }  
                             }
-                    .container{
+                    .textcontent p{
                         display: flex;
                         justify-content: space-between;
-                        margin-right: 3%; 
-                                li{
-                                    list-style-type: none;
-                                    font-size: 1.2em;
-                                    line-height: 2.5em;
-                                }     
-                    }    
+                        font-size: 1.2em;
+                        padding-left: 5%;
+                            span{
+                                display: inline-block;
+                                justify-self: flex-end;
+                                padding-right: 5%;
+                                font-weight: bold;
+                            }    
+                    } 
                     
                     #pour__commencer h3{
                         background: linear-gradient(to top, rgb(2, 40, 221) 0%,rgb(2, 40, 221) 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
@@ -77,26 +79,25 @@
                 background-color: $menu-delice;
                 margin-bottom: 30%;
                     .delice__title{
-                        font-size: 1em;
+                        font-size: 1.5em;
                     }
                     .delice__undertitle{
                         display: flex;  
                             .delice_bar_left, .delice_bar_right{
-                                width: 30%;
+                                width: 20%;
                                 height: 1%;
+                                margin-top: 10%;
                             }
                             h3{
-                                font-size: 0.5em;
+                                font-size: 1em;
                             }
                 }
-                .container ul{
-                        padding: 0;
-                        margin:0;
-                            li{   
-                                white-space: nowrap;
-                                list-style-type: none;
-                                font-size: 0.5em;
-                            }    
+                .textcontent p{
+                    text-align: center;
+                    display: flex;
+                    flex-direction: column-reverse; 
+                    font-size: 1em;
+                    padding-bottom: 5%;
                 }
         }
     }
@@ -114,26 +115,25 @@
                 background-color: $menu-delice;
                 margin-bottom: 30%;
                     .delice__title{
-                        font-size: 1em;
+                        font-size: 1.5em;
                     }
                     .delice__undertitle{
                         display: flex;  
                             .delice_bar_left, .delice_bar_right{
-                                width: 30%;
+                                width: 20%;
                                 height: 1%;
+                                margin-top: 7%;
                             }
                             h3{
-                                font-size: 0.6em;
+                                font-size: 1em;
                             }
                 }
-                .container ul{
-                        padding: 0;
-                        margin:0;
-                            li{   
-                                white-space: nowrap;
-                                list-style-type: none;
-                                font-size: 0.5em;
-                            }    
+                .textcontent p{
+                    text-align: center;
+                    display: flex;
+                    flex-direction: column-reverse; 
+                    font-size: 1em;
+                    padding-bottom: 5%;
                 }
         }
     }
@@ -147,7 +147,7 @@
         display: flex;
         flex-direction: column;
                 .delice{
-                    font-size: 0.8em;
+                    font-size: 1em;
                         .delice__undertitle{
                             display: flex;
                             justify-content: space-between;
@@ -159,10 +159,6 @@
                                     font-size: 1.3em;
                                 }
                         }
-                        .container ul{
-                                    padding: 0;
-                                    margin: 0;
-                                }
                 }
          }
 }

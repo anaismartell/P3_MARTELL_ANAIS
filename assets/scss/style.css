@@ -285,15 +285,17 @@ footer .footer__text {
 .main__pages .chic .chic__undertitle h3 {
   font-size: 1.5em;
 }
-.main__pages .chic .container {
+.main__pages .chic .textcontent p {
   display: flex;
   justify-content: space-between;
-  margin-right: 3%;
-}
-.main__pages .chic .container li {
-  list-style-type: none;
   font-size: 1.2em;
-  line-height: 2.5em;
+  padding-left: 5%;
+}
+.main__pages .chic .textcontent p span {
+  display: inline-block;
+  justify-self: flex-end;
+  padding-right: 5%;
+  font-weight: bold;
 }
 .main__pages .chic #en__appetit {
   color: #c67412;
@@ -338,25 +340,25 @@ footer .footer__text {
     margin-bottom: 30%;
   }
   .main__pages .chic .chic__title {
-    font-size: 1em;
+    font-size: 1.5em;
   }
   .main__pages .chic .chic__undertitle {
     display: flex;
   }
   .main__pages .chic .chic__undertitle .chic_bar_left, .main__pages .chic .chic__undertitle .chic_bar_right {
-    width: 30%;
+    width: 20%;
     height: 1%;
+    margin-top: 3%;
   }
   .main__pages .chic .chic__undertitle h3 {
-    font-size: 0.5em;
+    font-size: 1.2em;
   }
-  .main__pages .chic .container ul {
-    padding: 0;
-    margin: 0;
-  }
-  .main__pages .chic .container ul li {
-    list-style-type: none;
-    font-size: 0.5em;
+  .main__pages .chic .textcontent p {
+    text-align: center;
+    display: flex;
+    flex-direction: column-reverse;
+    font-size: 1em;
+    padding-bottom: 5%;
   }
 }
 /* fin mediaqueries petits mobiles*/
@@ -372,7 +374,7 @@ footer .footer__text {
     margin-bottom: 30%;
   }
   .main__pages .chic .chic__title {
-    font-size: 1em;
+    font-size: 1.5em;
   }
   .main__pages .chic .chic__undertitle {
     display: flex;
@@ -380,19 +382,17 @@ footer .footer__text {
   .main__pages .chic .chic__undertitle .chic_bar_left, .main__pages .chic .chic__undertitle .chic_bar_right {
     width: 20%;
     height: 1%;
-    margin-top: 3%;
+    margin-top: 5%;
   }
   .main__pages .chic .chic__undertitle h3 {
-    font-size: 0.7em;
+    font-size: 0.8em;
   }
-  .main__pages .chic .container ul {
-    padding: 0;
-    margin: 0;
-  }
-  .main__pages .chic .container ul li {
-    white-space: nowrap;
-    list-style-type: none;
-    font-size: 0.5em;
+  .main__pages .chic .textcontent p {
+    text-align: center;
+    display: flex;
+    flex-direction: column-reverse;
+    font-size: 0.8em;
+    padding-bottom: 5%;
   }
 }
 /* fin des mediaqueries grands téléphones*/
@@ -415,10 +415,6 @@ footer .footer__text {
   }
   .main__pages .chic .chic__undertitle h3 {
     font-size: 1.3em;
-  }
-  .main__pages .chic .container ul {
-    padding: 0;
-    margin: 0;
   }
 }
 .main__pages {
@@ -466,15 +462,17 @@ footer .footer__text {
 .main__pages .delice .delice__undertitle h3 {
   font-size: 1.5em;
 }
-.main__pages .delice .container {
+.main__pages .delice .textcontent p {
   display: flex;
   justify-content: space-between;
-  margin-right: 3%;
-}
-.main__pages .delice .container li {
-  list-style-type: none;
   font-size: 1.2em;
-  line-height: 2.5em;
+  padding-left: 5%;
+}
+.main__pages .delice .textcontent p span {
+  display: inline-block;
+  justify-self: flex-end;
+  padding-right: 5%;
+  font-weight: bold;
 }
 .main__pages .delice #pour__commencer h3 {
   background: linear-gradient(to top, #0228dd 0%, #0228dd 10%, transparent 10.01%) no-repeat left bottom/0 100%;
@@ -510,26 +508,25 @@ footer .footer__text {
     margin-bottom: 30%;
   }
   .main__pages .delice .delice__title {
-    font-size: 1em;
+    font-size: 1.5em;
   }
   .main__pages .delice .delice__undertitle {
     display: flex;
   }
   .main__pages .delice .delice__undertitle .delice_bar_left, .main__pages .delice .delice__undertitle .delice_bar_right {
-    width: 30%;
+    width: 20%;
     height: 1%;
+    margin-top: 10%;
   }
   .main__pages .delice .delice__undertitle h3 {
-    font-size: 0.5em;
+    font-size: 1em;
   }
-  .main__pages .delice .container ul {
-    padding: 0;
-    margin: 0;
-  }
-  .main__pages .delice .container ul li {
-    white-space: nowrap;
-    list-style-type: none;
-    font-size: 0.5em;
+  .main__pages .delice .textcontent p {
+    text-align: center;
+    display: flex;
+    flex-direction: column-reverse;
+    font-size: 1em;
+    padding-bottom: 5%;
   }
 }
 /* fin mediaqueries petits mobiles*/
@@ -545,26 +542,25 @@ footer .footer__text {
     margin-bottom: 30%;
   }
   .main__pages .delice .delice__title {
-    font-size: 1em;
+    font-size: 1.5em;
   }
   .main__pages .delice .delice__undertitle {
     display: flex;
   }
   .main__pages .delice .delice__undertitle .delice_bar_left, .main__pages .delice .delice__undertitle .delice_bar_right {
-    width: 30%;
+    width: 20%;
     height: 1%;
+    margin-top: 7%;
   }
   .main__pages .delice .delice__undertitle h3 {
-    font-size: 0.6em;
+    font-size: 1em;
   }
-  .main__pages .delice .container ul {
-    padding: 0;
-    margin: 0;
-  }
-  .main__pages .delice .container ul li {
-    white-space: nowrap;
-    list-style-type: none;
-    font-size: 0.5em;
+  .main__pages .delice .textcontent p {
+    text-align: center;
+    display: flex;
+    flex-direction: column-reverse;
+    font-size: 1em;
+    padding-bottom: 5%;
   }
 }
 /* fin des mediaqueries grands téléphone*/
@@ -575,7 +571,7 @@ footer .footer__text {
     flex-direction: column;
   }
   .main__pages .delice {
-    font-size: 0.8em;
+    font-size: 1em;
   }
   .main__pages .delice .delice__undertitle {
     display: flex;
@@ -587,10 +583,6 @@ footer .footer__text {
   }
   .main__pages .delice .delice__undertitle h3 {
     font-size: 1.3em;
-  }
-  .main__pages .delice .container ul {
-    padding: 0;
-    margin: 0;
   }
 }
 .main__pages {
@@ -649,15 +641,17 @@ footer .footer__text {
 .main__pages .note .note__undertitle h3:hover {
   background-size: 100% 100%;
 }
-.main__pages .note .container {
+.main__pages .note .textcontent p {
   display: flex;
   justify-content: space-between;
-  margin-right: 3%;
-}
-.main__pages .note .container li {
-  list-style-type: none;
   font-size: 1.2em;
-  line-height: 2.5em;
+  padding-left: 5%;
+}
+.main__pages .note .textcontent p span {
+  display: inline-block;
+  justify-self: flex-end;
+  padding-right: 5%;
+  font-weight: bold;
 }
 .main__pages .note .note__bottom {
   position: relative;
@@ -705,26 +699,24 @@ footer .footer__text {
     display: flex;
   }
   .main__pages .note .note__undertitle .note_bar_left, .main__pages .note .note__undertitle .note_bar_right {
-    width: 30%;
+    width: 20%;
     height: 1%;
-    margin-top: 5%;
+    margin-top: 10%;
   }
   .main__pages .note .note__undertitle h3 {
-    font-size: 0.7em;
+    font-size: 1em;
     background: linear-gradient(to top, #3f1219 0%, #3f1219 10%, transparent 10.01%) no-repeat left bottom/0 100%;
     transition: background-size 0.5s;
   }
   .main__pages .note .note__undertitle h3:hover {
     background-size: 100% 100%;
   }
-  .main__pages .note .container ul {
-    padding: 0;
-    margin: 0;
-  }
-  .main__pages .note .container ul li {
-    white-space: nowrap;
-    list-style-type: none;
-    font-size: 0.5em;
+  .main__pages .note .textcontent p {
+    text-align: center;
+    display: flex;
+    flex-direction: column-reverse;
+    font-size: 1em;
+    padding-bottom: 5%;
   }
   .main__pages .note .note__bottom {
     position: relative;
@@ -787,26 +779,24 @@ footer .footer__text {
     display: flex;
   }
   .main__pages .note .note__undertitle .note_bar_left, .main__pages .note .note__undertitle .note_bar_right {
-    width: 30%;
+    width: 20%;
     height: 1%;
-    margin-top: 5%;
+    margin-top: 8%;
   }
   .main__pages .note .note__undertitle h3 {
-    font-size: 0.7em;
+    font-size: 1em;
     background: linear-gradient(to top, #3f1219 0%, #3f1219 10%, transparent 10.01%) no-repeat left bottom/0 100%;
     transition: background-size 0.5s;
   }
   .main__pages .note .note__undertitle h3:hover {
     background-size: 100% 100%;
   }
-  .main__pages .note .container ul {
-    padding: 0;
-    margin: 0;
-  }
-  .main__pages .note .container ul li {
-    white-space: nowrap;
-    list-style-type: none;
-    font-size: 0.5em;
+  .main__pages .note .textcontent p {
+    text-align: center;
+    display: flex;
+    flex-direction: column-reverse;
+    font-size: 1em;
+    padding-bottom: 5%;
   }
   .main__pages .note .note__bottom {
     position: relative;
@@ -851,10 +841,6 @@ footer .footer__text {
   }
   .main__pages .note .note__undertitle h3:hover {
     background-size: 100% 100%;
-  }
-  .main__pages .note .container ul {
-    padding: 0;
-    margin: 0;
   }
 }
 .main__pages {
@@ -907,15 +893,17 @@ footer .footer__text {
 .main__pages .palette .palette__undertitle h3:hover {
   background-size: 100% 100%;
 }
-.main__pages .palette .container {
+.main__pages .palette .textcontent p {
   display: flex;
   justify-content: space-between;
-  margin-right: 3%;
-}
-.main__pages .palette .container li {
-  list-style-type: none;
   font-size: 1.2em;
-  line-height: 2.5em;
+  padding-left: 5%;
+}
+.main__pages .palette .textcontent p span {
+  display: inline-block;
+  justify-self: flex-end;
+  padding-right: 5%;
+  font-weight: bold;
 }
 
 /* mediaqueries petits mobiles*/
@@ -930,26 +918,25 @@ footer .footer__text {
     margin-bottom: 30%;
   }
   .main__pages .palette .palette__title {
-    font-size: 1em;
+    font-size: 1.5em;
   }
   .main__pages .palette .palette__undertitle {
     display: flex;
   }
   .main__pages .palette .palette__undertitle .palette_left, .main__pages .palette .palette__undertitle .palette_right {
-    width: 30%;
+    width: 20%;
     height: 1%;
+    margin-top: 10%;
   }
   .main__pages .palette .palette__undertitle h3 {
-    font-size: 0.5em;
+    font-size: 1em;
   }
-  .main__pages .palette .container ul {
-    padding: 0;
-    margin: 0;
-  }
-  .main__pages .palette .container ul li {
-    white-space: nowrap;
-    list-style-type: none;
-    font-size: 0.5em;
+  .main__pages .palette .textcontent p {
+    text-align: center;
+    display: flex;
+    flex-direction: column-reverse;
+    font-size: 1em;
+    padding-bottom: 5%;
   }
 }
 /* fin mediaqueries petits mobiles*/
@@ -965,26 +952,25 @@ footer .footer__text {
     margin-bottom: 30%;
   }
   .main__pages .palette .palette__title {
-    font-size: 1em;
+    font-size: 1.5em;
   }
   .main__pages .palette .palette__undertitle {
     display: flex;
   }
   .main__pages .palette .palette__undertitle .palette_left, .main__pages .palette .palette__undertitle .palette_right {
-    width: 30%;
+    width: 20%;
     height: 1%;
+    margin-top: 7%;
   }
   .main__pages .palette .palette__undertitle h3 {
-    font-size: 0.6em;
+    font-size: 1em;
   }
-  .main__pages .palette .container ul {
-    padding: 0;
-    margin: 0;
-  }
-  .main__pages .palette .container ul li {
-    white-space: nowrap;
-    list-style-type: none;
-    font-size: 0.5em;
+  .main__pages .palette .textcontent p {
+    text-align: center;
+    display: flex;
+    flex-direction: column-reverse;
+    font-size: 1em;
+    padding-bottom: 5%;
   }
 }
 /* fin des mediaqueries grands téléphone*/
@@ -1007,10 +993,6 @@ footer .footer__text {
   }
   .main__pages .palette .palette__undertitle h3 {
     font-size: 1.3em;
-  }
-  .main__pages .palette .container ul {
-    padding: 0;
-    margin: 0;
   }
 }
 #mentions__legales {

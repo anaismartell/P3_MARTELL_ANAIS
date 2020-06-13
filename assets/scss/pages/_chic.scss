@@ -28,16 +28,18 @@
                             font-size: 1.5em;
                         }
                     }
-                    .container{
+                    .textcontent p{
                         display: flex;
                         justify-content: space-between;
-                        margin-right: 3%; 
-                            li{
-                                list-style-type: none;
-                                font-size: 1.2em;
-                                line-height: 2.5em;
-                            }     
-                        }
+                        font-size: 1.2em;
+                        padding-left: 5%;
+                            span{
+                                display: inline-block;
+                                justify-self: flex-end;
+                                padding-right: 5%;
+                                font-weight: bold;
+                            }    
+                    } 
                     #en__appetit{
                         color: $chic-starter;
                         h3{
@@ -83,27 +85,27 @@
                 background-color: $menu-chic;
                 margin-bottom: 30%;
                     .chic__title{
-                        font-size: 1em;
+                        font-size: 1.5em;
                     }
                     .chic__undertitle{
                         display: flex;  
                             .chic_bar_left, .chic_bar_right{
-                                width: 30%;
+                                width: 20%;
                                 height: 1%;
+                                margin-top: 3%;
                             }
                             h3{
-                                font-size: 0.5em;
+                                font-size: 1.2em;
                             }   
                     
                     }
-                .container ul{
-                        padding: 0;
-                        margin:0;
-                            li{   
-                                list-style-type: none;
-                                font-size: 0.5em;
-                            }    
-                }
+                    .textcontent p{
+                        text-align: center;
+                        display: flex;
+                        flex-direction: column-reverse; 
+                        font-size: 1em;
+                        padding-bottom: 5%;
+                    }
         }
     }
          
@@ -121,28 +123,26 @@
                 background-color: $menu-chic;
                 margin-bottom: 30%;
                     .chic__title{
-                        font-size: 1em;
+                        font-size: 1.5em;
                     }
                     .chic__undertitle{
                         display: flex;  
                             .chic_bar_left, .chic_bar_right{
                                 width: 20%;
                                 height: 1%;
-                                margin-top: 3%;
+                                margin-top: 5%;
                             }
                             h3{
-                                font-size: 0.7em;
+                                font-size: 0.8em;
                             }
                 }
-                .container ul{
-                        padding: 0;
-                        margin:0;
-                            li{   
-                                white-space: nowrap;
-                                list-style-type: none;
-                                font-size: 0.5em;
-                            }    
-                }
+                    .textcontent p{
+                        text-align: center;
+                        display: flex;
+                        flex-direction: column-reverse; 
+                        font-size: 0.8em;
+                        padding-bottom: 5%;  
+                    }
         }
     }
          
@@ -168,10 +168,6 @@
                                     font-size: 1.3em;  
                                 }
                         }
-                        .container ul{
-                                    padding: 0;
-                                    margin: 0;
-                                }
                 }
          }
 }

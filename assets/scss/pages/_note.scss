@@ -41,16 +41,19 @@
                                     }   
                             }
                     }
-                    .container{
-                        display: flex;
-                        justify-content: space-between;
-                        margin-right: 3%; 
-                            li{
-                                list-style-type: none;
+                    .textcontent p{
+                                display: flex;
+                                justify-content: space-between;
                                 font-size: 1.2em;
-                                line-height: 2.5em;
-                            }     
-                    }
+                                padding-left: 5%;
+                            span{
+                                display: inline-block;
+                                justify-self: flex-end;
+                                padding-right: 5%;
+                                font-weight: bold;
+                            }    
+                    } 
+
                     .note__bottom{
                         position: relative;
                         display: flex;
@@ -93,12 +96,12 @@
             .note__undertitle{
                 display: flex;  
                     .note_bar_left, .note_bar_right{
-                        width: 30%;
+                        width: 20%;
                         height: 1%;
-                        margin-top: 5%;
+                        margin-top: 10%;
                     }
                     h3{
-                        font-size: 0.7em;
+                        font-size: 1em;
                         background: linear-gradient(to top, rgb(63, 18, 25) 0%,rgb(63, 18, 25) 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
                         transition: background-size 0.5s;
                             &:hover {
@@ -106,15 +109,13 @@
                             }   
                     }
             }
-            .container ul{
-                    padding: 0;
-                    margin:0;
-                        li{   
-                            white-space: nowrap;
-                            list-style-type: none;
-                            font-size: 0.5em;
-                        }    
-            }
+            .textcontent p{
+                text-align: center;
+                display: flex;
+                flex-direction: column-reverse; 
+                font-size: 1em;
+                padding-bottom: 5%;
+            } 
             .note__bottom{
                 position: relative;
                 display: flex;
@@ -166,12 +167,12 @@
             .note__undertitle{
                 display: flex;  
                     .note_bar_left, .note_bar_right{
-                        width: 30%;
+                        width: 20%;
                         height: 1%;
-                        margin-top: 5%;
+                        margin-top: 8%;
                     }
                     h3{
-                        font-size: 0.7em;
+                        font-size: 1em;
                         background: linear-gradient(to top, rgb(63, 18, 25) 0%,rgb(63, 18, 25) 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
                         transition: background-size 0.5s;
                             &:hover {
@@ -179,15 +180,13 @@
                             }   
                     }
             }
-            .container ul{
-                    padding: 0;
-                    margin:0;
-                        li{   
-                            white-space: nowrap;
-                            list-style-type: none;
-                            font-size: 0.5em;
-                        }    
-            }
+            .textcontent p{
+                text-align: center;
+                display: flex;
+                flex-direction: column-reverse; 
+                font-size: 1em;
+                padding-bottom: 5%;
+            } 
             .note__bottom{
                 position: relative;
                 display: flex;
@@ -231,10 +230,6 @@
                                         }   
                                 }
                         }
-                        .container ul{
-                                    padding: 0;
-                                    margin: 0;
-                                }
                 }
          }
 }
