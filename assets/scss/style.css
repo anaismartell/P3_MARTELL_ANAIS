@@ -4,29 +4,43 @@
   0% {
     -webkit-transform: translate(5px, 0px);
   }
+  10% {
+    -webkit-transform: translate(-5px, 0px);
+  }
   20% {
+    -webkit-transform: translate(5px, 0px);
+  }
+  30% {
     -webkit-transform: translate(-5px, 0px);
   }
   40% {
     -webkit-transform: translate(5px, 0px);
   }
+  50% {
+    -webkit-transform: translate(-5px, 0px);
+  }
   60% {
+    -webkit-transform: translate(5px, 0px);
+  }
+  70% {
     -webkit-transform: translate(-5px, 0px);
   }
   80% {
     -webkit-transform: translate(5px, 0px);
   }
-  100% {
+  90% {
     -webkit-transform: translate(-5px, 0px);
+  }
+  100% {
+    -webkit-transform: translate(5px, 0px);
   }
 }
 .footer__text {
   display: inline-block;
 }
 .footer__text:hover {
-  -webkit-animation-name: wiggle;
-  -webkit-animation-duration: 1s;
-  -webkit-animation-iteration-count: infinite;
+  -webkit-animation: wiggle 2s infinite;
+  animation: wiggle 2s infinite;
 }
 
 /*animation points de suspension*/
@@ -359,6 +373,7 @@ footer .footer__text {
     flex-direction: column-reverse;
     font-size: 1em;
     padding-bottom: 5%;
+    padding-left: 0%;
   }
 }
 /* fin mediaqueries petits mobiles*/
@@ -393,6 +408,7 @@ footer .footer__text {
     flex-direction: column-reverse;
     font-size: 0.8em;
     padding-bottom: 5%;
+    padding-left: 0%;
   }
 }
 /* fin des mediaqueries grands téléphones*/
@@ -527,6 +543,7 @@ footer .footer__text {
     flex-direction: column-reverse;
     font-size: 1em;
     padding-bottom: 5%;
+    padding-left: 0%;
   }
 }
 /* fin mediaqueries petits mobiles*/
@@ -561,6 +578,7 @@ footer .footer__text {
     flex-direction: column-reverse;
     font-size: 1em;
     padding-bottom: 5%;
+    padding-left: 0%;
   }
 }
 /* fin des mediaqueries grands téléphone*/
@@ -717,6 +735,7 @@ footer .footer__text {
     flex-direction: column-reverse;
     font-size: 1em;
     padding-bottom: 5%;
+    padding-left: 0%;
   }
   .main__pages .note .note__bottom {
     position: relative;
@@ -797,6 +816,7 @@ footer .footer__text {
     flex-direction: column-reverse;
     font-size: 1em;
     padding-bottom: 5%;
+    padding-left: 0%;
   }
   .main__pages .note .note__bottom {
     position: relative;
@@ -937,6 +957,7 @@ footer .footer__text {
     flex-direction: column-reverse;
     font-size: 1em;
     padding-bottom: 5%;
+    padding-left: 0%;
   }
 }
 /* fin mediaqueries petits mobiles*/
@@ -971,6 +992,7 @@ footer .footer__text {
     flex-direction: column-reverse;
     font-size: 1em;
     padding-bottom: 5%;
+    padding-left: 0%;
   }
 }
 /* fin des mediaqueries grands téléphone*/

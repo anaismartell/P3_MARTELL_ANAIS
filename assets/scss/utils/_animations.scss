@@ -2,18 +2,22 @@
 
 @-webkit-keyframes wiggle{
     0% {-webkit-transform: translate(5px, 0px);}
-    20% {-webkit-transform: translate(-5px, 0px);}
+    10% {-webkit-transform: translate(-5px, 0px);}
+    20% {-webkit-transform: translate(5px, 0px);}
+    30% {-webkit-transform: translate(-5px, 0px);}
     40% {-webkit-transform: translate(5px, 0px);}
-    60% {-webkit-transform: translate(-5px, 0px);}
+    50% {-webkit-transform: translate(-5px, 0px);}
+    60% {-webkit-transform: translate(5px, 0px);}
+    70% {-webkit-transform: translate(-5px, 0px);}
     80% {-webkit-transform: translate(5px, 0px);}
-    100% {-webkit-transform: translate(-5px, 0px);}
+    90% {-webkit-transform: translate(-5px, 0px);}
+    100% {-webkit-transform: translate(5px, 0px);}
 }
 .footer__text {
     display:inline-block;
     &:hover{
-    -webkit-animation-name: wiggle;
-    -webkit-animation-duration:1s;
-    -webkit-animation-iteration-count: infinite;
+    -webkit-animation: wiggle 2s infinite;
+    animation: wiggle 2s infinite;
     }
 }
 
@@ -44,12 +48,12 @@
 }
 
 .point__loader .prochainement__point:nth-child(2){
-    -webkit-animation: ptsuspension 2s 200ms infinite ease-in-out; ;
+    -webkit-animation: ptsuspension 2s 200ms infinite ease-in-out; 
     animation: ptsuspension 2s 200ms infinite ease-in-out;
 }
       
 .point__loader .prochainement__point:nth-child(1){
-    -webkit-animation: ptsuspension 2s 300ms infinite ease-in-out;;
+    -webkit-animation: ptsuspension 2s 300ms infinite ease-in-out;
     animation: ptsuspension 2s 300ms infinite ease-in-out;
 }
 
