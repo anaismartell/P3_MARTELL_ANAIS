@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   inkscape:version="1.0 (4035a4f, 2020-05-01)"
+   sodipodi:docname="chic_main_left.svg"
+   id="svg837"
+   preserveAspectRatio="xMidYMid meet"
+   viewBox="0 0 448.000000 78.000000"
+   height="78.000000pt"
+   width="448.000000pt"
+   version="1.0">
+  <metadata
+     id="metadata843">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs841" />
+  <sodipodi:namedview
+     inkscape:current-layer="svg837"
+     inkscape:window-maximized="0"
+     inkscape:window-y="23"
+     inkscape:window-x="0"
+     inkscape:cy="52"
+     inkscape:cx="298.66667"
+     inkscape:zoom="1.2388393"
+     showgrid="false"
+     id="namedview839"
+     inkscape:window-height="682"
+     inkscape:window-width="798"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0"
+     guidetolerance="10"
+     gridtolerance="10"
+     objecttolerance="10"
+     borderopacity="1"
+     bordercolor="#666666"
+     pagecolor="#ffffff" />
+  <g
+     style="fill:#a26196;fill-opacity:1"
+     id="g835"
+     stroke="none"
+     fill="#000000"
+     transform="translate(0.000000,78.000000) scale(0.100000,-0.100000)">
+    <path
+       style="fill:#a26196;fill-opacity:1"
+       id="path833"
+       d="M3505 449 c-71 -5 -245 -13 -385 -19 -140 -5 -354 -14 -475 -19 -249 -11 -1251 -31 -1605 -32 -129 0 -244 -4 -255 -9 -12 -5 81 -9 230 -9 366 -1 1343 -20 1615 -32 129 -5 341 -14 470 -19 129 -5 318 -14 420 -19 175 -10 189 -9 255 11 97 29 194 46 303 54 93 7 128 24 50 24 -24 0 -83 5 -133 11 -84 9 -128 19 -247 55 -50 15 -50 15 -243 3z" />
+  </g>
+</svg>

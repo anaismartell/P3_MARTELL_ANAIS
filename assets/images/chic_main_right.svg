@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   inkscape:version="1.0 (4035a4f, 2020-05-01)"
+   sodipodi:docname="chic_main_right.svg"
+   id="svg837"
+   preserveAspectRatio="xMidYMid meet"
+   viewBox="0 0 452.000000 78.000000"
+   height="78.000000pt"
+   width="452.000000pt"
+   version="1.0">
+  <metadata
+     id="metadata843">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs841" />
+  <sodipodi:namedview
+     inkscape:current-layer="svg837"
+     inkscape:window-maximized="0"
+     inkscape:window-y="23"
+     inkscape:window-x="0"
+     inkscape:cy="52"
+     inkscape:cx="301.33333"
+     inkscape:zoom="1.2278761"
+     showgrid="false"
+     id="namedview839"
+     inkscape:window-height="480"
+     inkscape:window-width="786"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0"
+     guidetolerance="10"
+     gridtolerance="10"
+     objecttolerance="10"
+     borderopacity="1"
+     bordercolor="#666666"
+     pagecolor="#ffffff" />
+  <g
+     style="fill:#a26196;fill-opacity:1"
+     id="g835"
+     stroke="none"
+     fill="#000000"
+     transform="translate(0.000000,78.000000) scale(0.100000,-0.100000)">
+    <path
+       style="fill:#a26196;fill-opacity:1"
+       id="path833"
+       d="M700 424 c-120 -40 -258 -64 -367 -64 -79 0 -44 -17 50 -24 108 -8 205 -25 302 -54 66 -20 80 -21 255 -11 102 5 291 14 420 19 129 5 341 14 470 19 273 12 1251 31 1615 32 138 0 241 4 230 8 -11 5 -270 11 -575 15 -737 9 -1355 23 -1515 36 -71 5 -263 15 -425 21 -162 5 -322 12 -355 14 -36 2 -78 -2 -105 -11z" />
+  </g>
+</svg>
